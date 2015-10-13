@@ -1,7 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
-			"mberthault\r"
+			"mberthault"
 		]
 	},
 	"msc-desc": "Adds the <code>&lt;mscalendar&gt;</code> tag to insert calendars into wiki pages",
