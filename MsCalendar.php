@@ -3,10 +3,15 @@
 $wgExtensionCredits['parserhook'][] = array(
 	'name' => 'MsCalendar',
 	'url' => 'https://www.mediawiki.org/wiki/Extension:MsCalendar',
-	'version' => '2.0',
+	'version' => '2.1',
 	'descriptionmsg' => 'msc-desc',
 	'license-name' => 'GPLv2+',
-	'author' => array( '[mailto:wiki@ratin.de Martin Schwindl]', '[mailto:wiki@keyler-consult.de Martin Keyler]', '[https://www.mediawiki.org/wiki/User:Luis_Felipe_Schenone Luis Felipe Schenone]' ),
+	'author' => array(
+		'[mailto:wiki@ratin.de Martin Schwindl]',
+		'[mailto:wiki@keyler-consult.de Martin Keyler]',
+		'[https://www.mediawiki.org/wiki/User:Luis_Felipe_Schenone Luis Felipe Schenone]',
+		'[https://www.mediawiki.org/wiki/User:Fraifrai Frédéric Souchon]'
+	),
 );
 
 $wgResourceModules['ext.MsCalendar'] = array(
@@ -48,6 +53,7 @@ $wgMessagesDirs['MsCalendar'] = __DIR__ . '/i18n';
 
 $wgHooks['ParserFirstCallInit'][] = 'MsCalendar::setHook';
 $wgHooks['LoadExtensionSchemaUpdates'][] = 'MsCalendar::updateDatabase';
+
 $wgAjaxExportList[] = 'MsCalendar::getMonth';
 $wgAjaxExportList[] = 'MsCalendar::saveNew';
 $wgAjaxExportList[] = 'MsCalendar::update';

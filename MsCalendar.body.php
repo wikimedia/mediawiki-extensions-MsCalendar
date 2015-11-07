@@ -23,7 +23,7 @@ class MsCalendar {
 		} else if ( array_key_exists( 'name', $args ) ) {
 			$name = $args['name']; // For backwards compatibility
 		} else {
-			return 'The calendar must have a name';
+			return wfMessage( 'msc-noname' );
 		}
 
 		$sort = 'abc'; // Default
@@ -45,18 +45,18 @@ class MsCalendar {
 
 		$parser->disableCache();
 		$wgOut->addModules( 'ext.MsCalendar' );
-		$output = '<div class="custom-header">';
+		$output = '<div class="ms-calendar-header">';
 		$output .= '<div class="righty">';
-		$output .= '<span id="custom-prev" class="custom-prev">&#10094;</span>';
-		$output .= '<span class="custom-year-month"><span id="custom-month" class="custom-month"></span></span>';
-		$output .= '<span id="custom-next" class="custom-next">&#10095;</span>';
-		$output .= '<span id="custom-prev-year" class="custom-prev">&#10094;</span>';
-		$output .= '<span class="custom-year-year"><span class="custom-year"></span></span>';
-		$output .= '<span id="custom-next-year" class="custom-next">&#10095;</span>';
+		$output .= '<span class="ms-calendar-prev">&#10094;</span>';
+		$output .= '<span class="ms-calendar-year-month"><span class="ms-calendar-month"></span></span>';
+		$output .= '<span class="ms-calendar-next">&#10095;</span>';
+		$output .= '<span class="ms-calendar-prev-year">&#10094;</span>';
+		$output .= '<span class="ms-calendar-year-year"><span class="ms-calendar-year"></span></span>';
+		$output .= '<span class="ms-calendar-next-year">&#10095;</span>';
 		$output .= '</div>';
-		$output .= '<span id="custom-current" class="custom-current" title="' . wfMessage( 'msc-todaylabel' ) . '">' . wfMessage( 'msc-today' ) . '</span>';
+		$output .= '<span class="ms-calendar-current" title="' . wfMessage( 'msc-todaylabel' ) . '">' . wfMessage( 'msc-today' ) . '</span>';
 		$output .= '</div>';
-		$output .= '<div id="calendar" data-calendar-id="' . $id . '" data-calendar-name="' . $name . '" data-calendar-sort="' . $sort . '" class="fc-calendar-container"></div>';
+		$output .= '<div class="fc-calendar-container" data-calendar-id="' . $id . '" data-calendar-name="' . $name . '" data-calendar-sort="' . $sort . '"></div>';
 		return $output;
 	}
 

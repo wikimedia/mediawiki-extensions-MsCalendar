@@ -4,7 +4,7 @@ body {
 	margin-bottom: 1px !important; 
 } 
 
-.custom-header {
+.ms-calendar-header {
 	border: 1px solid #DDDDDD;
 	font-size: 14px;
 	font-weight: 300;
@@ -16,36 +16,64 @@ body {
 	text-transform: uppercase;
 }
 
-.custom-header span {
+.ms-calendar-header span {
 	cursor: pointer;
 	font-size: 20px;
 	margin: 0;
 	padding: 0;
 }
 
-.custom-header span:hover {
+.ms-calendar-header span:hover {
 	color: #339966;
 }
 
-.custom-header span.custom-current {
+.ms-calendar-header span.ms-calendar-current {
 	background: transparent url(images/calendar-icon-today.png) no-repeat 0px -2px;
 	padding: 5px 20px 5px 40px;
 	cursor: pointer;
 }
 
-.custom-header span.custom-current:hover {
+.ms-calendar-header span.ms-calendar-current:hover {
 	color: #339966;
 }
 
-.custom-header .righty {
+.ms-calendar-header .righty {
 	float: right;
 }
 
-.custom-header select,
-.custom-header input {
+.ms-calendar-header select,
+.ms-calendar-header input {
 	margin: 1px 5px 5px 2px;
 	vertical-align: middle;
 }
+
+.ms-calendar-dialog-form label {
+	display: inline-block;
+	margin-top: 3px;
+	margin-right: 3px;
+}
+
+.ms-calendar-dialog-form input {
+	padding: 3px;
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+.ms-calendar-dialog-form fieldset {
+	border: none;
+}
+
+.ms-calendar-dialog-form .exclamation {
+	border: 1px solid red;
+	padding: 5px 20px;
+	background: #FF9999 url(images/exclamation-red.png) no-repeat 2px 5px;
+}
+
+.ms-calendar-dialog-form img {
+	cursor: pointer;
+}
+
+/* Calendario */
 
 .fc-calendar-container {
 	width: 100%;
@@ -276,32 +304,6 @@ body {
 
 .ui-widget {
 	font-size: 0.8em !important;
-}
-
-#dialog-form label {
-	display: inline-block;
-	margin-top: 3px;
-	margin-right: 3px;
-}
-
-#dialog-form input {
-	padding: 3px;
-	margin-right: 3px;
-	margin-bottom: 5px;
-}
-
-#dialog-form fieldset {
-	border: none;
-}
-
-#dialog-form .exclamation {
-	border: 1px solid red;
-	padding: 5px 20px;
-	background: #FF9999 url(images/exclamation-red.png) no-repeat 2px 5px;
-}
-
-#dialog-form img {
-	cursor: pointer;
 }
 
 /* Hide the yearly checkbox until the functionality is implemented */

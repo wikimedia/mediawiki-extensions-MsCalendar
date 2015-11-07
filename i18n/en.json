@@ -5,6 +5,7 @@
 		]
 	},
 	"msc-desc": "Adds the <code>&lt;mscalendar&gt;</code> tag to insert calendars into wiki pages",
+	"msc-noname": "Every calendar must have a name",
 	"msc-notfirstday": "Attention, this is a recurring event",
 	"msc-change": "Confirm",
 	"msc-remove": "Delete this event",
