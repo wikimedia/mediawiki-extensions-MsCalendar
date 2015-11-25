@@ -33,14 +33,20 @@ class MsCalendar {
 
 		// Get the id of the calendar
 		$dbr = wfGetDB( DB_SLAVE );
-		$table = $dbr->tableName( 'mscal_names' );
-		$result = $dbr->query( "SELECT ID FROM $table WHERE Cal_Name = '$name'", __METHOD__ );
+		$result = $dbr->select( 'mscal_names', array( 'ID' ), array( 'Cal_Name' => $name ));
 		$row = $dbr->fetchRow( $result );
 		if ( $row ) {
 			$id = $row['ID'];
 		} else {
-			$dbr->query( "INSERT INTO $table ( ID, Cal_Name ) VALUES ( '', '$name' )", __METHOD__ );
-			$id = $dbr->insert_id;
+			$dbw = wfGetDB( DB_MASTER );
+			$dbw->insert(
+				'mscal_names',
+				array(
+					'ID' => null,
+					'Cal_Name' => $name,
+				)
+			);
+			$id = $dbw->insert_id;
 		}
 
 		$parser->disableCache();
@@ -65,27 +71,25 @@ class MsCalendar {
 			return false;
 		}
 
-		$order = 'ORDER BY Text'; // Default
-		if ( $calendarSort == 'id' ) {
-			$order = 'ORDER BY ID';
-		}
-
 		$vars = array();
 		$dbr = wfGetDB( DB_SLAVE );
-
-		$listTable = $dbr->tableName( 'mscal_list' );
-		$contentTable = $dbr->tableName( 'mscal_content' );
-
-		$query = "SELECT Date,
-			DATE_FORMAT(Date, '%m') as monat,
-			YEAR(date) as jahr,
-			DAY(date) as tag,
-			DATE_FORMAT(Date, '%m-%d-%Y') as Datum,
-			Text_ID, b.ID, Text, Duration, Start_Date, Yearly, Day_of_Set
-			FROM $listTable a, $contentTable b
-			WHERE MONTH(Date) = '$month' AND YEAR(Date) = '$year' AND a.Text_ID = b.ID AND a.Cal_ID = $calendarId $order";
-
-		$result = $dbr->query( $query, __METHOD__ );
+		$result = $dbr->select(
+			array( 'a' => 'mscal_list', 'b' => 'mscal_content' ),
+			array(
+				"DATE_FORMAT(Date, '%m') as monat", "YEAR(date) as jahr", "DAY(date) as tag",
+				"DATE_FORMAT(Date, '%m-%d-%Y') as Datum",
+				'Text_ID', 'b.ID', 'Text', 'Duration',
+				'Start_Date', 'Yearly', 'Day_of_Set',
+			),
+			array(
+				'MONTH(Date)' => $month,
+				'YEAR(Date)'  => $year,
+				'a.Text_ID = b.ID',
+				'a.Cal_ID'    => $calendarId,
+			),
+			__METHOD__,
+			array( 'ORDER BY' => ($calendarSort == 'id') ? 'ID' : 'Text' )
+		);
 		while ( $row = $dbr->fetchRow( $result ) ) {
 			if ( $row['jahr'] == $year)	{
 				$vars[ $row['Datum'] ][] = array(
@@ -114,23 +118,34 @@ class MsCalendar {
 		$newDate = date( 'Y-m-d', strtotime( $date ) );
 		$newDate2 = date( 'm-d-Y', strtotime( $date ) );
 
-		$dbr = wfGetDB( DB_SLAVE );
-		$contentTable = $dbr->tableName( 'mscal_content' );
+		$dbw = wfGetDB( DB_MASTER );
+		$dbw->insert(
+			'mscal_content',
+			array(
+				'ID'         => null,
+				'Text'       => $title,
+				'Start_Date' => $newDate,
+				'Duration'   => $duration,
+				'Yearly'     => $yearly,
+			)
+		);
 
-		$query = "INSERT INTO $contentTable ( ID, Text, Start_Date, Duration, Yearly ) VALUES ( '', '$title', '$newDate', $duration, $yearly )";
-		$result = $dbr->query( $query, __METHOD__ );
-
-		$query = "SELECT MAX(ID) as maxid FROM $contentTable";
-		$result = $dbr->query( $query, __METHOD__ );
-		$row = $dbr->fetchRow( $result );
-		$maxId =  $row['maxid'];
-
-		$listTable = $dbr->tableName( 'mscal_list' );
+		$result = $dbw->select( 'mscal_content', array( 'MAX(ID) as maxid' ), '');
+		$row = $dbw->fetchRow( $result );
+		$maxId = $row['maxid'];
 
 		for ( $i = 0; $i < $duration; $i++ ) {
 			$addDate = date( 'Y-m-d', strtotime( $newDate. ' + ' . $i . ' days' ) );
-			$query = "INSERT INTO $listTable (ID, Date, Text_ID, Day_of_Set, Cal_ID ) VALUES ( '', '$addDate', $maxId, " . ( $i + 1 ) . ", $calendarId )";
-			$result = $dbr->query( $query, __METHOD__ );
+			$dbw->insert(
+				'mscal_list',
+				array(
+					'ID'         => null,
+					'Date'       => $addDate,
+					'Text_ID'    => $maxId,
+					'Day_of_Set' => $i + 1,
+					'Cal_ID'     => $calendarId,
+				)
+			);
 		}
 
 		$vars[ $newDate2 ][] = array(
@@ -146,20 +161,32 @@ class MsCalendar {
 		$newDate = date( 'Y-m-d', strtotime( $date ) );
 		$newDate2 = date( 'm-d-Y', strtotime( $date ) );
 
-		$dbr = wfGetDB( DB_SLAVE );
+		$dbw = wfGetDB( DB_MASTER );
+		$dbw->update(
+			'mscal_content',
+			array(
+				'Text'       => $title,
+				'Start_Date' => $newDate,
+				'Duration'   => $duration,
+				'Yearly'     => $yearly,
+			),
+			array( 'ID' => $eventId )
+		);
 
-		$table = $dbr->tableName( 'mscal_content' );
-		$query = "UPDATE $table SET Text = '$title', Start_Date = '$newDate', Duration = $duration, Yearly = $yearly WHERE ID = $eventId";
-		$dbr->query( $query, __METHOD__ );
-
-		$table = $dbr->tableName( 'mscal_list' );
-		$query = "DELETE FROM $table WHERE Text_ID = $eventId";
-		$dbr->query( $query, __METHOD__ );
+		$dbw->delete( 'mscal_list', array( 'Text_ID' => $eventId ));
 
 		for ( $i = 0; $i < $duration; $i++ ) {
 			$addDate = date( 'Y-m-d', strtotime( $newDate. ' + ' . $i . ' days' ) );
-			$query = "INSERT INTO $table ( ID, Date, Text_ID, Day_of_Set, Cal_ID ) VALUES ( '', '$addDate', $eventId, " . ( $i + 1 ) . ", $calendarId )";
-			$dbr->query( $query, __METHOD__ );
+			$dbw->insert(
+				'mscal_list',
+				array(
+					'ID'         => null,
+					'Date'       => $addDate,
+					'Text_ID'    => $eventId,
+					'Day_of_Set' => $i + 1,
+					'Cal_ID'     => $calendarId,
+				)
+			);
 		}
 
 		$data[ $newDate2 ][] = array(
@@ -175,15 +202,9 @@ class MsCalendar {
 		$newDate = date( 'm-d-Y', strtotime( $date ) );
 		$newDate2 = date( 'm-d-Y', strtotime( $date ) );
 
-		$dbr = wfGetDB( DB_SLAVE );
-
-		$table = $dbr->tableName( 'mscal_content' );
-		$query = "DELETE FROM $table WHERE ID = $eventId";
-		$result = $dbr->query( $query, __METHOD__ );
-
-		$table = $dbr->tableName( 'mscal_list' );
-		$query = "DELETE FROM $table WHERE Text_ID = $eventId";
-		$result = $dbr->query( $query, __METHOD__ );
+		$dbw = wfGetDB( DB_MASTER );
+		$dbw->delete( 'mscal_content', array( 'ID' => $eventId ));
+		$dbw->delete( 'mscal_list', array( 'Text_ID' => $eventId ));
 
 		$data[ $newDate2 ][] = array(
 			'ID' => $eventId,
