@@ -11,7 +11,7 @@ class MsCalendar {
 	}
 
 	static function setHook( Parser $parser ) {
-		$parser->setHook( 'mscalendar', 'MsCalendar::render' );
+		$parser->setHook( 'MsCalendar', 'MsCalendar::render' );
 		return true;
 	}
 

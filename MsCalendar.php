@@ -3,9 +3,9 @@
 $wgExtensionCredits['parserhook'][] = array(
 	'name' => 'MsCalendar',
 	'url' => 'https://www.mediawiki.org/wiki/Extension:MsCalendar',
-	'version' => '2.1',
+	'version' => '2.2',
 	'descriptionmsg' => 'msc-desc',
-	'license-name' => 'GPLv2+',
+	'license-name' => 'GPLv3',
 	'author' => array(
 		'[mailto:wiki@ratin.de Martin Schwindl]',
 		'[mailto:wiki@keyler-consult.de Martin Keyler]',
