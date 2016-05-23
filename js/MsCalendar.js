@@ -160,19 +160,25 @@ $( function () {
 			if ( this_dialog.find( 'input[name="remove_event"]' ).is( ':checked' ) ) {
 				rs_var = 'MsCalendar::remove';
 			}
-			var inhalt = this_dialog.find( 'input[name="form_inhalt"]' ),
-				datum = this_dialog.find( 'input[name="form_datum"]' ),
-				event_id = this_dialog.find( 'input[name="form_id"]' ),
-				duration = this_dialog.find( 'input[name="form_duration"]' ),
+			var inhalt = this_dialog.find( 'input[name="form_inhalt"]' ).val(),
+				datum = this_dialog.find( 'input[name="form_datum"]' ).val(),
+				event_id = this_dialog.find( 'input[name="form_id"]' ).val(),
+				duration = this_dialog.find( 'input[name="form_duration"]' ).val(),
 				yearly = this_dialog.find( 'input[name="form_yearly"]' ).is( ':checked' ) ? 1 : 0,
 				bValid = true;
+
+			// Sanitize
+			inhalt = mw.html.escape( inhalt );
+			datum = mw.html.escape( datum );
+			event_id = mw.html.escape( event_id );
+			duration = mw.html.escape( duration );
 
 			if ( bValid ) {
 				//console.log( datum.val() );
 				$.get( mw.util.wikiScript(), {
 					action: 'ajax',
 					rs: rs_var,
-					rsargs: [ calendarId, datum.val(), inhalt.val(), event_id.val(), duration.val(), yearly ]
+					rsargs: [ calendarId, datum, inhalt, event_id, duration, yearly ]
 				}, function ( data ) {
 					loadMonth();
 				}, 'json' );
