@@ -54,9 +54,9 @@ class MsCalendar {
 		$output .= '<span class="custom-year-year"><span class="custom-year"></span></span>';
 		$output .= '<span id="custom-next-year" class="custom-next">&#10095;</span>';
 		$output .= '</div>';
-		$output .= '<span id="custom-current" class="custom-current" title="' . wfMessage( 'msc-todaylabel' ) . '">' . wfMessage( 'msc-today' ) . '</span>';
+		$output .= '<span id="custom-current" class="custom-current" title="' . wfMessage( 'msc-todaylabel' )->escaped() . '">' . wfMessage( 'msc-today' )->parse() . '</span>';
 		$output .= '</div>';
-		$output .= '<div id="calendar" data-calendar-id="' . $id . '" data-calendar-name="' . $name . '" data-calendar-sort="' . $sort . '" class="fc-calendar-container"></div>';
+		$output .= '<div id="calendar" data-calendar-id="' . htmlspecialchars( $id ) . '" data-calendar-name="' . htmlspecialchars( $name ) . '" data-calendar-sort="' . htmlspecialchars( $sort ) . '" class="fc-calendar-container"></div>';
 		return $output;
 	}
 
