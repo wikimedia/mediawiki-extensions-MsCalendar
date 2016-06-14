@@ -89,6 +89,13 @@ $( function () {
 				rs: 'MsCalendar::getMonth',
 				rsargs: [ month, year, calendarId, calendarSort ]
 			}, function ( data ) {
+				for ( year in data ) {
+					for ( i = 0; i < data[year].length; i++ ) {
+						for( items in data[year][i] ) {
+							data[year][i][items] = mw.html.escape( data[year][i][items] );
+						}
+					}
+				}
 				//console.log( data );
 				calendar.setData( data );
 				//console.log( calendar.caldata );
