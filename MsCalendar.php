@@ -3,7 +3,7 @@
 $wgExtensionCredits['parserhook'][] = array(
 	'name' => 'MsCalendar',
 	'url' => 'https://www.mediawiki.org/wiki/Extension:MsCalendar',
-	'version' => '2.0',
+	'version' => '2.0-1',
 	'descriptionmsg' => 'msc-desc',
 	'license-name' => 'GPLv2+',
 	'author' => array( '[mailto:wiki@ratin.de Martin Schwindl]', '[mailto:wiki@keyler-consult.de Martin Keyler]', '[https://www.mediawiki.org/wiki/User:Luis_Felipe_Schenone Luis Felipe Schenone]' ),
