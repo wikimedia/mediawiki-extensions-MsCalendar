@@ -89,6 +89,13 @@ $( function () {
 				rs: 'MsCalendar::getMonth',
 				rsargs: [ month, year, calendarId, calendarSort ]
 			}, function ( data ) {
+				for ( year in data ) {
+					for ( i = 0; i < data[year].length; i++ ) {
+						for( items in data[year][i] ) {
+							data[year][i][items] = mw.html.escape( data[year][i][items] );
+						}
+					}
+				}
 				//console.log( data );
 				calendar.setData( data );
 				//console.log( calendar.caldata );
@@ -166,12 +173,6 @@ $( function () {
 				duration = this_dialog.find( 'input[name="form_duration"]' ).val(),
 				yearly = this_dialog.find( 'input[name="form_yearly"]' ).is( ':checked' ) ? 1 : 0,
 				bValid = true;
-
-			// Sanitize
-			inhalt = mw.html.escape( inhalt );
-			datum = mw.html.escape( datum );
-			event_id = mw.html.escape( event_id );
-			duration = mw.html.escape( duration );
 
 			if ( bValid ) {
 				//console.log( datum.val() );
