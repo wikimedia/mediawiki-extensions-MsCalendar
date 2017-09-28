@@ -46,7 +46,7 @@ class MsCalendar {
 					'Cal_Name' => $name,
 				)
 			);
-			$id = $dbw->insert_id;
+			$id = $dbw->insertId();
 		}
 
 		$parser->disableCache();
