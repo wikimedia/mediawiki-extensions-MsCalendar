@@ -1,10 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"mberthault"
+			"mberthault",
+                        "riverbees"
 		]
 	},
-	"msc-desc": "Adds the <code>&lt;mscalendar&gt;</code> tag to insert calendars into wiki pages",
+	"msc-desc": "Ajouter <code>&lt;mscalendar&gt;</code> pour insérer un calendrier dans une page dans le wiki.",
 	"msc-notfirstday": "Pas le premier jour... ",
 	"msc-change": "Confirmer",
 	"msc-remove": "Supprimer",
