@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"Saraiki"
+		]
+	},
+	"msc-change": "تصدیق",
+	"msc-create": "تصدیق",
+	"msc-cancel": "منسوخ",
+	"msc-eventdate": "تاریخ:",
+	"msc-today": "اڄ",
+	"msc-months": "ڄنوری،فروری،مارچ،اپریل،مئی،جون،جولائی،اگست،ستمبر،اکتوبر،نومبر،دسمبر"
+}

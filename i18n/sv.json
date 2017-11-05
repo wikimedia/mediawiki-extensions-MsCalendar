@@ -1,0 +1,24 @@
+{
+	"@metadata": {
+		"authors": [
+			"WikiPhoenix"
+		]
+	},
+	"msc-desc": "Lägger till märket <code>&lt;mscalendar&gt;</code> för att infoga kalendrar på wikisidor",
+	"msc-noname": "Varje kalender måste ha ett namn",
+	"msc-notfirstday": "OBS: Detta är en återkommande händelse",
+	"msc-change": "Bekräfta",
+	"msc-remove": "Radera denna händelse",
+	"msc-create": "Bekräfta",
+	"msc-cancel": "Avbryt",
+	"msc-eventname": "Namn på händelse:",
+	"msc-eventdate": "Datum:",
+	"msc-eventduration": "Varaktighet i dagar:",
+	"msc-eventyearly": "Årlig händelse",
+	"msc-eventedit": "Redigera denna händelse",
+	"msc-eventcreate": "Skapa ny händelse",
+	"msc-today": "Idag",
+	"msc-todaylabel": "Gå till nuvarande datum",
+	"msc-months": "januari,februari,mars,april,maj,juni,juli,augusti,september,oktober,november,december",
+	"msc-days": "Söndag,Måndag,Tisdag,Onsdag,Torsdag,Fredag,Lördag"
+}

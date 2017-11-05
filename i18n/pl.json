@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Chrumps"
+		]
+	},
+	"msc-change": "Potwierdź",
+	"msc-create": "Potwierdź",
+	"msc-cancel": "Anuluj",
+	"msc-eventdate": "Data:",
+	"msc-today": "Dzisiaj",
+	"msc-months": "Styczeń,Luty,Marzec,Kwiecień,Maj,Czerwiec,Lipiec,Sierpień,Wrzesień,Październik,Listopad,Grudzień",
+	"msc-days": "Niedziela,Poniedziałek,Wtorek,Środa,Czwartek,Piątek,Sobota"
+}

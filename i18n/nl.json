@@ -1,0 +1,24 @@
+{
+	"@metadata": {
+		"authors": [
+			"Mainframe98"
+		]
+	},
+	"msc-desc": "Voegt het <code>&lt;mscalendar&gt;</code> element toe om kalenders in wikipagina's in te voegen",
+	"msc-noname": "Iedere kalender moet een naam hebben",
+	"msc-notfirstday": "Let op, dit is een herhalende gebeurtenis",
+	"msc-change": "Bevestigen",
+	"msc-remove": "Deze gebeurtenis verwijderen",
+	"msc-create": "Bevestigen",
+	"msc-cancel": "Annuleren",
+	"msc-eventname": "Naam van de gebeurtenis:",
+	"msc-eventdate": "Datum:",
+	"msc-eventduration": "Duur in dagen:",
+	"msc-eventyearly": "Jaarlijkse gebeurtenis",
+	"msc-eventedit": "Deze gebeurtenis bewerken",
+	"msc-eventcreate": "Nieuwe gebeurtenis aanmaken",
+	"msc-today": "Vandaag",
+	"msc-todaylabel": "Ga naar de huidige datum",
+	"msc-months": "januari,februari,maart,april,mei,juni,juli,augustus,september,oktober,november,december",
+	"msc-days": "zondag,maandag,dinsdag,woensdag,donderdag,vrijdag,zaterdag"
+}

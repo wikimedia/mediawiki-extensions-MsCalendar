@@ -1,0 +1,22 @@
+{
+	"@metadata": {
+		"authors": [
+			"Liuxinyu970226"
+		]
+	},
+	"msc-desc": "添加<code>&lt;mscalendar&gt;</code>标签以插入日历至wiki页面",
+	"msc-noname": "每个日历必须有名称",
+	"msc-notfirstday": "注意，这是循环活动",
+	"msc-change": "确认",
+	"msc-remove": "删除此活动",
+	"msc-create": "确认",
+	"msc-cancel": "取消",
+	"msc-eventname": "活动名称：",
+	"msc-eventdate": "日期：",
+	"msc-eventduration": "持续天数：",
+	"msc-eventyearly": "年度活动",
+	"msc-eventedit": "编辑此活动",
+	"msc-eventcreate": "创建新活动",
+	"msc-today": "今天",
+	"msc-todaylabel": "前往当前日期"
+}

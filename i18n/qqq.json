@@ -1,19 +1,23 @@
 {
-	"@metadata": {},
+	"@metadata": {
+		"authors": [
+			"Robby"
+		]
+	},
 	"msc-desc": "{{desc|name=MsCalendar|url=https://www.mediawiki.org/wiki/Extension:MsCalendar}}",
 	"msc-noname": "An error message",
 	"msc-notfirstday": "A hint message",
-	"msc-change": "A button text",
+	"msc-change": "A button text\n{{Identical|Confirm}}",
 	"msc-remove": "A button text",
 	"msc-create": "A button text",
-	"msc-cancel": "A button text",
+	"msc-cancel": "A button text\n{{Identical|Cancel}}",
 	"msc-eventname": "A label message",
 	"msc-eventdate": "A label message",
 	"msc-eventduration": "A label message",
 	"msc-eventyearly": "A label message",
 	"msc-eventedit": "A dialog title",
 	"msc-eventcreate": "A dialog title",
-	"msc-today": "A hint message",
+	"msc-today": "A hint message\n{{Identical|Today}}",
 	"msc-todaylabel": "A button text",
 	"msc-months": "All months",
 	"msc-days": "All weekdays"
