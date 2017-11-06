@@ -12,7 +12,7 @@
 	"msc-create": "A button text",
 	"msc-cancel": "A button text\n{{Identical|Cancel}}",
 	"msc-eventname": "A label message",
-	"msc-eventdate": "A label message",
+	"msc-eventdate": "A label message\n{{Identical|Date}}",
 	"msc-eventduration": "A label message",
 	"msc-eventyearly": "A label message",
 	"msc-eventedit": "A dialog title",

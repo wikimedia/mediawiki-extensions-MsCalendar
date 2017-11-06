@@ -1,0 +1,18 @@
+{
+	"@metadata": {
+		"authors": [
+			"Elisardojm"
+		]
+	},
+	"msc-change": "Confirmar",
+	"msc-create": "Confirmar",
+	"msc-cancel": "Cancelar",
+	"msc-eventname": "Nome do eventoː",
+	"msc-eventdate": "Data:",
+	"msc-eventduration": "Duración en días:",
+	"msc-eventyearly": "Evento anual",
+	"msc-eventedit": "Editar este evento",
+	"msc-eventcreate": "Crear novo evento",
+	"msc-today": "Hoxe",
+	"msc-todaylabel": "Ir á data actual"
+}

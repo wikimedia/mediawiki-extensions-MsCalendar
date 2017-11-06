@@ -1,0 +1,23 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ykhwong"
+		]
+	},
+	"msc-desc": "위키 문서에 달력을 추가하려면 <code>&lt;mscalendar&gt;</code> 태그를 추가하십시오",
+	"msc-noname": "모든 달력은 이름이 있어야 합니다",
+	"msc-notfirstday": "주의하세요. 이것은 반복되는 이벤트입니다",
+	"msc-change": "확인",
+	"msc-remove": "이 이벤트 삭제",
+	"msc-create": "확인",
+	"msc-cancel": "취소",
+	"msc-eventname": "이벤트 이름:",
+	"msc-eventdate": "날짜:",
+	"msc-eventyearly": "연중 이벤트",
+	"msc-eventedit": "이 이벤트 편집",
+	"msc-eventcreate": "새 이벤트 만들기",
+	"msc-today": "오늘",
+	"msc-todaylabel": "현재 날짜로 이동",
+	"msc-months": "1월,2월,3월,4월,5월,6월,7월,8월,9월,10월,11월,12월",
+	"msc-days": "일요일,월요일,화요일,수요일,목요일,금요일,토요일"
+}

@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"Beta16"
+		]
+	},
+	"msc-change": "Conferma",
+	"msc-remove": "Cancella questo evento",
+	"msc-create": "Conferma",
+	"msc-cancel": "Annulla",
+	"msc-eventname": "Nome dell'evento:",
+	"msc-eventduration": "Durata in giorni:",
+	"msc-eventedit": "Modifica questo evento",
+	"msc-eventcreate": "Crea nuovo evento",
+	"msc-today": "Oggi"
+}
