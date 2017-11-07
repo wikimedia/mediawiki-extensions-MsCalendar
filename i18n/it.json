@@ -4,13 +4,18 @@
 			"Beta16"
 		]
 	},
+	"msc-noname": "Tutti i calendari devono avere un nome",
+	"msc-notfirstday": "Attenzione, questo è un evento ricorrente",
 	"msc-change": "Conferma",
 	"msc-remove": "Cancella questo evento",
 	"msc-create": "Conferma",
 	"msc-cancel": "Annulla",
 	"msc-eventname": "Nome dell'evento:",
 	"msc-eventduration": "Durata in giorni:",
+	"msc-eventyearly": "Evento annuale",
 	"msc-eventedit": "Modifica questo evento",
 	"msc-eventcreate": "Crea nuovo evento",
-	"msc-today": "Oggi"
+	"msc-today": "Oggi",
+	"msc-months": "gennaio,febbraio,marzo,aprile,maggio,giugno,luglio,agosto,settembre,ottobre,novembre,dicembre",
+	"msc-days": "domenica,lunedì,martedì,mercoledì,giovedì,venerdì,sabato"
 }

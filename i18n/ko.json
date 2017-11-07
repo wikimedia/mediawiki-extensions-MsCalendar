@@ -13,6 +13,7 @@
 	"msc-cancel": "취소",
 	"msc-eventname": "이벤트 이름:",
 	"msc-eventdate": "날짜:",
+	"msc-eventduration": "기간 (일수):",
 	"msc-eventyearly": "연중 이벤트",
 	"msc-eventedit": "이 이벤트 편집",
 	"msc-eventcreate": "새 이벤트 만들기",

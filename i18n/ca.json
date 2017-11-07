@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Fitoschido"
+		]
+	},
+	"msc-months": "gener,febrer,març,abril,maig,juny,juliol,agost,setembre,octubre,novembre,desembre",
+	"msc-days": "diumenge,dilluns,dimarts,dimecres,dijous,divendres,dissabte"
+}

@@ -1,0 +1,25 @@
+{
+	"@metadata": {
+		"authors": [
+			"Fitoschido",
+			"KATRINE1992"
+		]
+	},
+	"msc-desc": "Añade la etiqueta <code>&lt;mscalendar&gt;</code> para insertar calendarios en páginas del wiki",
+	"msc-noname": "Todos los calendarios deben tener un nombre",
+	"msc-notfirstday": "Atención: este evento es periódico",
+	"msc-change": "Confirmar",
+	"msc-remove": "Eliminar este evento",
+	"msc-create": "Confirmar",
+	"msc-cancel": "Cancelar",
+	"msc-eventname": "Nombre del evento:",
+	"msc-eventdate": "Fecha:",
+	"msc-eventduration": "Duración en días:",
+	"msc-eventyearly": "Evento anual",
+	"msc-eventedit": "Editar este evento",
+	"msc-eventcreate": "Crear evento nuevo",
+	"msc-today": "Hoy",
+	"msc-todaylabel": "Ir a la fecha actual",
+	"msc-months": "enero,febrero,marzo,abril,mayo,junio,julio,agosto,septiembre,octubre,noviembre,diciembre",
+	"msc-days": "domingo,lunes,martes,miércoles,jueves,viernes,sábado"
+}
