@@ -9,7 +9,7 @@
 	"msc-notfirstday": "A hint message",
 	"msc-change": "A button text\n{{Identical|Confirm}}",
 	"msc-remove": "A button text",
-	"msc-create": "A button text",
+	"msc-create": "A button text\n{{Identical|Confirm}}",
 	"msc-cancel": "A button text\n{{Identical|Cancel}}",
 	"msc-eventname": "A label message",
 	"msc-eventdate": "A label message\n{{Identical|Date}}",

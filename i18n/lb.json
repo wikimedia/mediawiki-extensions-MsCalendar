@@ -5,9 +5,11 @@
 		]
 	},
 	"msc-change": "Confirméieren",
+	"msc-create": "Confirméieren",
 	"msc-cancel": "Ofbriechen",
 	"msc-eventdate": "Datum:",
 	"msc-eventduration": "Dauer an Deeg:",
 	"msc-today": "Haut",
+	"msc-months": "Januar,Februar,Mäerz,Abrëll,Mee,Juni,Juli,August,September,Oktober,November,Dezember",
 	"msc-days": "Sonndeg,Méindeg,Dënschdeg,Mëttwoch,Donneschdeg,Freideg,Samschdeg"
 }
