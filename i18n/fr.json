@@ -4,10 +4,11 @@
 			"mberthault",
 			"riverbees",
 			"DePlusJean",
-			"Gomoko"
+			"Gomoko",
+			"Wladek92"
 		]
 	},
-	"msc-desc": "Ajouter <code>&lt;mscalendar&gt;</code> pour insérer un calendrier dans une page du wiki.",
+	"msc-desc": "Ajouter <code>&lt;mscalendar&gt;</code> pour insérer un calendrier dans une page du wiki",
 	"msc-noname": "Chaque calendrier doit avoir un nom",
 	"msc-notfirstday": "Pas le premier jour...",
 	"msc-change": "Confirmer",
