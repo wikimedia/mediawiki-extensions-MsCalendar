@@ -5,7 +5,8 @@
 			"riverbees",
 			"DePlusJean",
 			"Gomoko",
-			"Wladek92"
+			"Wladek92",
+			"Urhixidur"
 		]
 	},
 	"msc-desc": "Ajouter <code>&lt;mscalendar&gt;</code> pour insérer un calendrier dans une page du wiki",
@@ -15,14 +16,14 @@
 	"msc-remove": "Supprimer",
 	"msc-create": "Valider",
 	"msc-cancel": "Annuler",
-	"msc-eventname": "Nom Evt:",
+	"msc-eventname": "Nom Evt :",
 	"msc-eventdate": "Date :",
 	"msc-eventduration": "Durée (en jours) :",
 	"msc-eventyearly": "Tous les ans",
 	"msc-eventedit": "Modifier Evt Calendrier",
 	"msc-eventcreate": "Créer Evt Calendrier",
-	"msc-today": "MAINTENANT",
-	"msc-todaylabel": "Sauter a la date du jour",
-	"msc-months": "Janvier,Fevrier,Mars,Avril,Mai,Juin,Juillet,Aout,Septembre,Octobre,Novembre,Decembre",
+	"msc-today": "Aujourd’hui",
+	"msc-todaylabel": "Sauter à la date du jour",
+	"msc-months": "Janvier,Février,Mars,Avril,Mai,Juin,Juillet,Août,Septembre,Octobre,Novembre,Décembre",
 	"msc-days": "Dimanche,Lundi,Mardi,Mercredi,Jeudi,Vendredi,Samedi"
 }
