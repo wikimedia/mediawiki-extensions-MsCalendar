@@ -1,9 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
-			"Kareyac"
+			"Kareyac",
+			"Wirbel78"
 		]
 	},
 	"msc-change": "Подтвердить",
+	"msc-create": "Подтвердить",
+	"msc-cancel": "Отмена",
+	"msc-eventdate": "Дата:",
 	"msc-today": "Сегодня"
 }
