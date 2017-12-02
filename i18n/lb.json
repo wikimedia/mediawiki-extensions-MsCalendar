@@ -4,12 +4,14 @@
 			"Robby"
 		]
 	},
+	"msc-noname": "All Kalenner muss en Numm hunn",
 	"msc-change": "Confirméieren",
 	"msc-create": "Confirméieren",
 	"msc-cancel": "Ofbriechen",
 	"msc-eventdate": "Datum:",
 	"msc-eventduration": "Dauer an Deeg:",
 	"msc-today": "Haut",
+	"msc-todaylabel": "Op den aktuellen Datum goen",
 	"msc-months": "Januar,Februar,Mäerz,Abrëll,Mee,Juni,Juli,August,September,Oktober,November,Dezember",
 	"msc-days": "Sonndeg,Méindeg,Dënschdeg,Mëttwoch,Donneschdeg,Freideg,Samschdeg"
 }
