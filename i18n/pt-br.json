@@ -1,0 +1,24 @@
+{
+	"@metadata": {
+		"authors": [
+			"Eduardo Addad de Oliveira"
+		]
+	},
+	"msc-desc": "Adiciona a etiqueta <code>&lt;mscalendar&gt;</code> para inserir calendários nas páginas da wiki",
+	"msc-noname": "Todos os calendários têm de ter um nome",
+	"msc-notfirstday": "Atenção, este evento é periódico",
+	"msc-change": "Confirmar",
+	"msc-remove": "Eliminar este evento",
+	"msc-create": "Confirmar",
+	"msc-cancel": "Cancelar",
+	"msc-eventname": "Nome do evento:",
+	"msc-eventdate": "Data:",
+	"msc-eventduration": "Duração em dias:",
+	"msc-eventyearly": "Evento anual",
+	"msc-eventedit": "Editar este evento",
+	"msc-eventcreate": "Criar evento novo",
+	"msc-today": "Hoje",
+	"msc-todaylabel": "Ir para a data atual",
+	"msc-months": "janeiro,fevereiro,março,abril,maio,junho,julho,agosto,setembro,outubro,novembro,dezembro",
+	"msc-days": "domingo,segunda-feira,terça-feira,quarta-feira,quinta-feira,sexta-feira,sábado"
+}
