@@ -9,7 +9,7 @@
 	],
 	"url": "https://www.mediawiki.org/wiki/Extension:MsCalendar",
 	"descriptionmsg": "msc-desc",
-	"license-name": "GPL-3.0",
+	"license-name": "GPL-3.0-only",
 	"type": "parserhook",
 	"MessagesDirs": {
 		"MsCalendar": [
