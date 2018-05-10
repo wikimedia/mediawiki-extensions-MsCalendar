@@ -62,13 +62,14 @@
 			"MsCalendar::updateDatabase"
 		]
 	},
-	"AjaxExportList": [
-		"MsCalendar::getMonth",
-		"MsCalendar::saveNew",
-		"MsCalendar::update",
-		"MsCalendar::remove",
-		"MsCalendar::checkDB"
-	],
-	"config": {},
+	"config": {
+		"AjaxExportList": [
+			"MsCalendar::getMonth",
+			"MsCalendar::saveNew",
+			"MsCalendar::update",
+			"MsCalendar::remove",
+			"MsCalendar::checkDB"
+		]
+	},
 	"manifest_version": 1
 }
