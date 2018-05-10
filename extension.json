@@ -19,6 +19,7 @@
 	"AutoloadClasses": {
 		"MsCalendar": "MsCalendar.body.php"
 	},
+	"callback": "MsCalendar::onRegistration",
 	"ResourceModules": {
 		"ext.MsCalendar": {
 			"scripts": [
@@ -62,14 +63,6 @@
 			"MsCalendar::updateDatabase"
 		]
 	},
-	"config": {
-		"AjaxExportList": [
-			"MsCalendar::getMonth",
-			"MsCalendar::saveNew",
-			"MsCalendar::update",
-			"MsCalendar::remove",
-			"MsCalendar::checkDB"
-		]
-	},
+	"config": {},
 	"manifest_version": 1
 }
