@@ -2,6 +2,15 @@
 
 class MsCalendar {
 
+	public static function onRegistration() {
+		global $wgAjaxExportList;
+		$wgAjaxExportList[] = 'MsCalendar::getMonth';
+		$wgAjaxExportList[] = 'MsCalendar::saveNew';
+		$wgAjaxExportList[] = 'MsCalendar::update';
+		$wgAjaxExportList[] = 'MsCalendar::remove';
+		$wgAjaxExportList[] = 'MsCalendar::checkDB';
+	}
+
 	static function updateDatabase( DatabaseUpdater $updater ) {
 		global $wgDBprefix;
 		$updater->addExtensionTable( $wgDBprefix . 'mscal_list', __DIR__ . '/MsCalendar.sql' );
