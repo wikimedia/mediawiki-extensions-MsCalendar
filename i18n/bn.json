@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Aftabuzzaman"
+			"Aftabuzzaman",
+			"আফতাবুজ্জামান"
 		]
 	},
 	"msc-desc": "উইকির পাতায় পঞ্জিকা সন্নিবেশ করতে <code>&lt;mscalendar&gt;</code> ট্যাগ যোগ করে",
