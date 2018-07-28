@@ -1,9 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Elisardojm"
+			"Elisardojm",
+			"Banjo"
 		]
 	},
+	"msc-desc": "Engade a etiqueta <code>&lt;mscalendar&gt;</code> para inserir calendarios en páxinas wiki",
 	"msc-noname": "Todos os calendarios deben ter un nome",
 	"msc-notfirstday": "Atención, este evento é periódico",
 	"msc-change": "Confirmar",
