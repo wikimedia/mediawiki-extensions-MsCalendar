@@ -1,0 +1,24 @@
+{
+	"@metadata": {
+		"authors": [
+			"Joetaras"
+		]
+	},
+	"msc-desc": "Aggiunge 'u tag <code>&lt;mscalendar&gt;</code> pe sckaffà calendarije jndr'à le pàggene uicchi",
+	"msc-noname": "Ogne caledanrije adda avè 'nu nome",
+	"msc-notfirstday": "Iapre l'uecchije, quiste jè 'n'avvenimende recorrende",
+	"msc-change": "Conferme",
+	"msc-remove": "Scagìlle stu avvenimende",
+	"msc-create": "Conferme",
+	"msc-cancel": "Annulle",
+	"msc-eventname": "Nome de l'avvenimende:",
+	"msc-eventdate": "Date:",
+	"msc-eventduration": "Durate in sciurne:",
+	"msc-eventyearly": "Avvenimende annuale",
+	"msc-eventedit": "Cange stu avvenimende",
+	"msc-eventcreate": "Ccreje 'n'avvenimende nuève",
+	"msc-today": "Osce",
+	"msc-todaylabel": "Vèje 'a date de mò",
+	"msc-months": "Scennare, Febbrare, Màrze, Abbrile, Masce, Sciugne, Luglie, Aguste, Settemmre, Ottommre, Novemmre, Decemmre",
+	"msc-days": "Dumeneche, Lunedìe, Martedìe, Mercredìe, Sciuvedìe, Vendredìe, Sabate"
+}
