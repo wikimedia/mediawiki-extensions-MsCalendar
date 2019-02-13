@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Mirzali"
+			"Mirzali",
+			"Orbot707"
 		]
 	},
-	"msc-cancel": "Bıtexelne"
+	"msc-cancel": "Bıtexelne",
+	"msc-eventdate": "Tarix:"
 }
