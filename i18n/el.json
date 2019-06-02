@@ -1,14 +1,15 @@
 {
 	"@metadata": {
 		"authors": [
-			"KATRINE1992"
+			"KATRINE1992",
+			"Sarri.greek"
 		]
 	},
 	"msc-desc": "Προσθέτει τον <code>&lt;mscalendar&gt;</code> τίτλο για να εισάγει ημερολόγια στις σελίδες του wiki",
 	"msc-noname": "Κάθε ημερολόγιο πρέπει να έχει όνομα",
 	"msc-notfirstday": "Προσοχή, αυτό είναι ένα τακτικό συμβάν",
 	"msc-change": "Επιβεβαιώστε",
-	"msc-remove": "Διαγράψετε αυτό το συμβάν",
+	"msc-remove": "Διαγράψτε αυτό το συμβάν",
 	"msc-create": "Επιβεβαιώστε",
 	"msc-cancel": "Ακυρώστε",
 	"msc-eventname": "Τίτλος του συμβάντος:",
