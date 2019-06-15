@@ -41,7 +41,7 @@ class MsCalendar {
 		}
 
 		// Get the id of the calendar
-		$dbr = wfGetDB( DB_SLAVE );
+		$dbr = wfGetDB( DB_REPLICA );
 		$result = $dbr->select( 'mscal_names', array( 'ID' ), array( 'Cal_Name' => $name ));
 		$row = $dbr->fetchRow( $result );
 		if ( $row ) {
@@ -81,7 +81,7 @@ class MsCalendar {
 		}
 
 		$vars = array();
-		$dbr = wfGetDB( DB_SLAVE );
+		$dbr = wfGetDB( DB_REPLICA );
 		$result = $dbr->select(
 			array( 'a' => 'mscal_list', 'b' => 'mscal_content' ),
 			array(
