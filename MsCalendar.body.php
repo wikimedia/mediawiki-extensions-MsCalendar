@@ -58,7 +58,7 @@ class MsCalendar {
 			$id = $dbw->insertId();
 		}
 
-		$parser->disableCache();
+		$parser->getOutput()->updateCacheExpiry( 0 );
 		$wgOut->addModules( 'ext.MsCalendar' );
 		$output = '<div class="ms-calendar-header">';
 		$output .= '<div class="righty">';
