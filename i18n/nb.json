@@ -1,0 +1,24 @@
+{
+	"@metadata": {
+		"authors": [
+			"Jon Harald Søby"
+		]
+	},
+	"msc-desc": "Legger til taggen <code>&lt;mscalendar&gt;</code> for å sette inn kalendre på wikisider",
+	"msc-noname": "Hver kalender må ha et navn",
+	"msc-notfirstday": "Merk, dette er en gjentagende hendelse",
+	"msc-change": "Bekreft",
+	"msc-remove": "Slett denne hendelsen",
+	"msc-create": "Bekreft",
+	"msc-cancel": "Avbryt",
+	"msc-eventname": "Hendelsens navn:",
+	"msc-eventdate": "Dato:",
+	"msc-eventduration": "Varighet i dager:",
+	"msc-eventyearly": "Årlig hendelse",
+	"msc-eventedit": "Rediger denne hendelsen",
+	"msc-eventcreate": "Opprett ny hendelse",
+	"msc-today": "I dag",
+	"msc-todaylabel": "Gå til dagens dato",
+	"msc-months": "januar,februar,mars,april,mai,juni,juli,august,september,oktober,november,desember",
+	"msc-days": "søndag,mandag,tirsdag,onsdag,torsdag,fredag,lørdag"
+}
