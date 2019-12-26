@@ -1,0 +1,24 @@
+{
+	"@metadata": {
+		"authors": [
+			"BaRaN6161 TURK"
+		]
+	},
+	"msc-desc": "Wiki sayfalarına takvimler eklemek için <code>&lt;mscalendar&gt;</code> etiketini ekler",
+	"msc-noname": "Her takvimin bir adı olmalıdır",
+	"msc-notfirstday": "Dikkat, bu tekrarlayan bir olay",
+	"msc-change": "Onayla",
+	"msc-remove": "Bu olayı sil",
+	"msc-create": "Onayla",
+	"msc-cancel": "İptal",
+	"msc-eventname": "Olayın adı:",
+	"msc-eventdate": "Tarih:",
+	"msc-eventduration": "Gün cinsinden süre:",
+	"msc-eventyearly": "Yıllık olay",
+	"msc-eventedit": "Bu olayı düzenle",
+	"msc-eventcreate": "Yeni olay oluştur",
+	"msc-today": "Bugün",
+	"msc-todaylabel": "Geçerli tarihe git",
+	"msc-months": "Ocak,Şubat,Mart,Nisan,Mayıs,Haziran,Temmuz,Ağustos,Eylül,Ekim,Kasım,Aralık",
+	"msc-days": "Pazar,Pazartesi,Salı,Çarşamba,Perşembe,Cuma,Cumartesi"
+}
