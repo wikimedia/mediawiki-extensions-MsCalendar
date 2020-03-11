@@ -55,12 +55,8 @@
 		"remoteExtPath": "MsCalendar"
 	},
 	"Hooks": {
-		"ParserFirstCallInit": [
-			"MsCalendar::setHook"
-		],
-		"LoadExtensionSchemaUpdates": [
-			"MsCalendar::updateDatabase"
-		]
+		"ParserFirstCallInit": "MsCalendar::setHook",
+		"LoadExtensionSchemaUpdates": "MsCalendar::updateDatabase"
 	},
 	"config": {},
 	"manifest_version": 1,
