@@ -4,7 +4,7 @@
 			"BaRaN6161 TURK"
 		]
 	},
-	"msc-desc": "Wiki sayfalarına takvimler eklemek için <code>&lt;mscalendar&gt;</code> etiketini ekler",
+	"msc-desc": "Viki sayfalarına takvimler eklemek için <code>&lt;mscalendar&gt;</code> etiketini ekler",
 	"msc-noname": "Her takvimin bir adı olmalıdır",
 	"msc-notfirstday": "Dikkat, bu tekrarlayan bir olay",
 	"msc-change": "Onayla",
