@@ -157,7 +157,7 @@ $( function () {
 			})
 			.find( 'input[name="form_datum"]' ).datepicker({
 				showOn: 'button',
-				buttonImage: mw.config.get( 'wgExtensionAssetsPath' ) + '/MsCalendar/images/calendar-select.png',
+				buttonImage: mw.config.get( 'wgExtensionAssetsPath' ) + '/MsCalendar/resources/images/calendar-select.png',
 				buttonImageOnly: true
 				//defaultDate: dateProperties.day + '.' + dateProperties.month + '.' + dateProperties.year
 			});

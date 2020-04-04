@@ -17,7 +17,7 @@
 		]
 	},
 	"AutoloadClasses": {
-		"MsCalendar": "MsCalendar.body.php"
+		"MsCalendar": "src/MsCalendar.php"
 	},
 	"callback": "MsCalendar::onRegistration",
 	"ResourceModules": {
@@ -26,7 +26,7 @@
 				"js/jquery.calendario.js",
 				"js/MsCalendar.js"
 			],
-			"styles": "MsCalendar.css",
+			"styles": "css/MsCalendar.css",
 			"messages": [
 				"msc-desc",
 				"msc-notfirstday",
@@ -51,8 +51,8 @@
 		}
 	},
 	"ResourceFileModulePaths": {
-		"localBasePath": "",
-		"remoteExtPath": "MsCalendar"
+		"localBasePath": "resources",
+		"remoteExtPath": "MsCalendar/resources"
 	},
 	"Hooks": {
 		"ParserFirstCallInit": "MsCalendar::setHook",
