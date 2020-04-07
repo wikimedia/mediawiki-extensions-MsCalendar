@@ -1,8 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Liuxinyu970226",
-			"Kly"
+			"Kly",
+			"Liuxinyu970226"
 		]
 	},
 	"msc-desc": "添加 <code>&lt;mscalendar&gt;</code> 標籤來在 wiki 頁面插入行事曆。",

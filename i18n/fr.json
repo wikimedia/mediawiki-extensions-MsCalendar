@@ -1,12 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"mberthault",
-			"riverbees",
 			"DePlusJean",
 			"Gomoko",
+			"Urhixidur",
 			"Wladek92",
-			"Urhixidur"
+			"mberthault",
+			"riverbees"
 		]
 	},
 	"msc-desc": "Ajouter <code>&lt;mscalendar&gt;</code> pour insérer un calendrier dans une page du wiki",

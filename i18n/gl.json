@@ -1,8 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Elisardojm",
-			"Banjo"
+			"Banjo",
+			"Elisardojm"
 		]
 	},
 	"msc-desc": "Engade a etiqueta <code>&lt;mscalendar&gt;</code> para inserir calendarios en páxinas wiki",
