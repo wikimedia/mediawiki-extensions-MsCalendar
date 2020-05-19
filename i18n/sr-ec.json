@@ -1,0 +1,25 @@
+{
+	"@metadata": {
+		"authors": [
+			"BadDog",
+			"Zoranzoki21"
+		]
+	},
+	"msc-desc": "Додаје ознаку <code>&lt;mscalendar&gt;</code> за уметање календара у вики странице.",
+	"msc-noname": "Сваки календар мора да има име.",
+	"msc-notfirstday": "Пажња: Догађај се понавља.",
+	"msc-change": "Потврди",
+	"msc-remove": "Избриши догађај",
+	"msc-create": "Потврди",
+	"msc-cancel": "Откажи",
+	"msc-eventname": "Назив:",
+	"msc-eventdate": "Датум:",
+	"msc-eventduration": "Трајање у данима:",
+	"msc-eventyearly": "Годишњи догађај",
+	"msc-eventedit": "Уређивање догађаја",
+	"msc-eventcreate": "Прављење догађаја",
+	"msc-today": "Данас",
+	"msc-todaylabel": "Иди на тренутан датум",
+	"msc-months": "јануар,фебруар,март,април,мај,јун,јул,август,септембар,октобар,новембар,децембар",
+	"msc-days": "недеља,понедељак,уторак,среда,четвртак,петак,субота"
+}
