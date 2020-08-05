@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Chrisportelli"
+			"Chrisportelli",
+			"ToniSant"
 		]
 	},
+	"msc-eventduration": "Kemm il-jum ilu:",
 	"msc-months": "Jannar,Frar,Marzu,April,Mejju,Ġunju,Lulju,Awwissu,Settembru,Ottubru,Novembru,Diċembru"
 }
