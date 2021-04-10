@@ -1,4 +1,4 @@
-$( function () {
+( function ( $, mw ) {
 
 	$( '.fc-calendar-container' ).each( function () {
 
@@ -188,4 +188,4 @@ $( function () {
 			}
 		}
 	}); // each
-});
+}( jQuery, mediaWiki ) );

@@ -1,6 +1,6 @@
 {
 	"name": "MsCalendar",
-	"version": "2.3",
+	"version": "2.4",
 	"author": [
 		"[mailto:wiki@ratin.de Martin Schwindl]",
 		"[mailto:wiki@keyler-consult.de Martin Keyler]",
@@ -19,7 +19,6 @@
 	"AutoloadClasses": {
 		"MsCalendar": "src/MsCalendar.php"
 	},
-	"callback": "MsCalendar::onRegistration",
 	"ResourceModules": {
 		"ext.MsCalendar": {
 			"scripts": [
@@ -45,11 +44,10 @@
 				"msc-months",
 				"msc-days"
 			],
-			"dependencies": [
-				"jquery.ui"
-			]
+			"dependencies": "jquery.ui"
 		}
 	},
+	"callback": "MsCalendar::onRegistration",
 	"ResourceFileModulePaths": {
 		"localBasePath": "resources",
 		"remoteExtPath": "MsCalendar/resources"
@@ -58,8 +56,7 @@
 		"ParserFirstCallInit": "MsCalendar::setHook",
 		"LoadExtensionSchemaUpdates": "MsCalendar::updateDatabase"
 	},
-	"config": {},
-	"manifest_version": 1,
+	"manifest_version": 2,
 	"requires": {
 		"MediaWiki": ">= 1.34.0"
 	}

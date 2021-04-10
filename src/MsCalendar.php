@@ -36,8 +36,6 @@ class MsCalendar {
 	 * @return string
 	 */
 	static function render( $input, array $args, Parser $parser, PPFrame $frame ) {
-		global $wgOut;
-
 		if ( $input ) {
 			$name = $input;
 		} elseif ( array_key_exists( 'name', $args ) ) {
@@ -70,7 +68,8 @@ class MsCalendar {
 		}
 
 		$parser->getOutput()->updateCacheExpiry( 0 );
-		$wgOut->addModules( 'ext.MsCalendar' );
+		$parser->getOutput()->addModules( 'ext.calendario' );
+		$parser->getOutput()->addModules( 'ext.MsCalendar' );
 		$output = '<div class="ms-calendar-header">';
 		$output .= '<div class="righty">';
 		$output .= '<span class="ms-calendar-prev">&#10094;</span>';

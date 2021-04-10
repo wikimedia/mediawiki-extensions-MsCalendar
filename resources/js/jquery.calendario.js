@@ -8,8 +8,8 @@
  * Copyright 2012, Codrops
  * http://www.codrops.com
  */
-;( function( $, window, undefined ) {
-	
+( function ( $, window ) {
+
 	'use strict';
 
 	$.Calendario = function( options, element ) {
