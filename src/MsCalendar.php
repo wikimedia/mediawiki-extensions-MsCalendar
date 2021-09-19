@@ -56,7 +56,7 @@ class MsCalendar {
 		if ( $row ) {
 			$id = $row['ID'];
 		} else {
-			$dbw = wfGetDB( DB_MASTER );
+			$dbw = wfGetDB( DB_PRIMARY );
 			$dbw->insert(
 				'mscal_names',
 				[
@@ -154,7 +154,7 @@ class MsCalendar {
 		$newDate = date( 'Y-m-d', strtotime( $date ) );
 		$newDate2 = date( 'm-d-Y', strtotime( $date ) );
 
-		$dbw = wfGetDB( DB_MASTER );
+		$dbw = wfGetDB( DB_PRIMARY );
 		$dbw->insert(
 			'mscal_content',
 			[
@@ -206,7 +206,7 @@ class MsCalendar {
 		$newDate = date( 'Y-m-d', strtotime( $date ) );
 		$newDate2 = date( 'm-d-Y', strtotime( $date ) );
 
-		$dbw = wfGetDB( DB_MASTER );
+		$dbw = wfGetDB( DB_PRIMARY );
 		$dbw->update(
 			'mscal_content',
 			[
@@ -256,7 +256,7 @@ class MsCalendar {
 		$newDate = date( 'm-d-Y', strtotime( $date ) );
 		$newDate2 = date( 'm-d-Y', strtotime( $date ) );
 
-		$dbw = wfGetDB( DB_MASTER );
+		$dbw = wfGetDB( DB_PRIMARY );
 		$dbw->delete( 'mscal_content', [ 'ID' => $eventId ] );
 		$dbw->delete( 'mscal_list', [ 'Text_ID' => $eventId ] );
 

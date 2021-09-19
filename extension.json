@@ -11,6 +11,9 @@
 	"descriptionmsg": "msc-desc",
 	"license-name": "GPL-3.0-only",
 	"type": "parserhook",
+	"requires": {
+		"MediaWiki": ">= 1.35.3"
+	},
 	"MessagesDirs": {
 		"MsCalendar": [
 			"i18n"
@@ -56,8 +59,5 @@
 		"ParserFirstCallInit": "MsCalendar::setHook",
 		"LoadExtensionSchemaUpdates": "MsCalendar::updateDatabase"
 	},
-	"manifest_version": 2,
-	"requires": {
-		"MediaWiki": ">= 1.34.0"
-	}
+	"manifest_version": 2
 }
