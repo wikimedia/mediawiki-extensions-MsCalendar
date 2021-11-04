@@ -15,10 +15,9 @@ class MsCalendar {
 	 * @param DatabaseUpdater $updater
 	 */
 	static function updateDatabase( DatabaseUpdater $updater ) {
-		global $wgDBprefix;
-		$updater->addExtensionTable( $wgDBprefix . 'mscal_list', __DIR__ . '/../sql/MsCalendar.sql' );
-		$updater->addExtensionTable( $wgDBprefix . 'mscal_names', __DIR__ . '/../sql/MsCalendar.sql' );
-		$updater->addExtensionTable( $wgDBprefix . 'mscal_content', __DIR__ . '/../sql/MsCalendar.sql' );
+		$updater->addExtensionTable( 'mscal_list', __DIR__ . '/../sql/MsCalendar.sql' );
+		$updater->addExtensionTable( 'mscal_names', __DIR__ . '/../sql/MsCalendar.sql' );
+		$updater->addExtensionTable( 'mscal_content', __DIR__ . '/../sql/MsCalendar.sql' );
 	}
 
 	/**
