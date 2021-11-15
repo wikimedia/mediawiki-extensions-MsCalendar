@@ -4,6 +4,10 @@
 			"Ajeje Brazorf"
 		]
 	},
+	"msc-change": "Cunferma",
+	"msc-create": "Cunferma",
 	"msc-cancel": "Annulla",
-	"msc-today": "Oi"
+	"msc-today": "Oi",
+	"msc-months": "jinnaru,frivaru,marzu,aprili,maiu,giugnu,giugnettu, austu,sittèmmiru,uttùviru,nuvèmmiru,dicèmmiru",
+	"msc-days": "duminicadìa,lunidìa,martidìa,mercuridìa,jovidìa,venniridìa,sabbatudìa"
 }
