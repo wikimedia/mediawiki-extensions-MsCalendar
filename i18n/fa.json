@@ -1,15 +1,19 @@
 {
 	"@metadata": {
 		"authors": [
-			"Alireza Ivaz"
+			"Alireza Ivaz",
+			"Huji",
+			"Jeeputer"
 		]
 	},
-	"msc-desc": "برچسب &lt;MsCalendar&gt; را برای درج تقویم در برگه‌های ویکی می‌افزاید.",
+	"msc-desc": "برچسب &lt;MsCalendar&gt; را برای درج تقویم در صفحه‌های ویکی می‌افزاید.",
 	"msc-noname": "همهٔ تقویم‌ها باید یک نام داشته‌باشند",
 	"msc-change": "پذیرفتن",
 	"msc-create": "پذیرفتن",
 	"msc-cancel": "چشم پوشی",
 	"msc-eventdate": "تاریخ:",
+	"msc-eventyearly": "رویداد سالانه",
+	"msc-eventedit": "ویرایش این رویداد",
 	"msc-today": "امروز",
 	"msc-todaylabel": "بروبه تاریخ کنونی",
 	"msc-months": "ژانویه,فوریه,مارس,آوریل,مه,ژوئن,ژوئیه,اوت,سپتامبر,اکتبر,نوامبر,دسامبر"

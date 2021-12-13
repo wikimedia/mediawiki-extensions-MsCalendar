@@ -2,10 +2,11 @@
 	"@metadata": {
 		"authors": [
 			"Fitoschido",
-			"KATRINE1992"
+			"KATRINE1992",
+			"Jakeukalane"
 		]
 	},
-	"msc-desc": "Añade la etiqueta <code>&lt;mscalendar&gt;</code> para insertar calendarios en páginas del wiki",
+	"msc-desc": "Añade la etiqueta <code>&lt;mscalendar&gt;</code> para insertar calendarios en páginas de la wiki",
 	"msc-noname": "Todos los calendarios deben tener un nombre",
 	"msc-notfirstday": "Atención: este evento es periódico",
 	"msc-change": "Confirmar",
