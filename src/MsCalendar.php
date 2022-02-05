@@ -50,10 +50,9 @@ class MsCalendar {
 
 		// Get the id of the calendar
 		$dbr = wfGetDB( DB_REPLICA );
-		$result = $dbr->select( 'mscal_names', [ 'ID' ], [ 'Cal_Name' => $name ] );
-		$row = $dbr->fetchRow( $result );
+		$row = $dbr->selectRow( 'mscal_names', [ 'ID' ], [ 'Cal_Name' => $name ] );
 		if ( $row ) {
-			$id = $row['ID'];
+			$id = $row->ID;
 		} else {
 			$dbw = wfGetDB( DB_PRIMARY );
 			$dbw->insert(
@@ -115,28 +114,26 @@ class MsCalendar {
 			__METHOD__,
 			[ 'ORDER BY' => ( $calendarSort == 'id' ) ? 'ID' : 'Text' ]
 		);
-		// phpcs:ignore MediaWiki.ControlStructures.AssignmentInControlStructures.AssignmentInControlStructures
-		while ( $row = $dbr->fetchRow( $result ) ) {
-			if ( $row['jahr'] == $year ) {
-				$vars[ $row['Datum'] ][] = [
-					'ID' => $row['Text_ID'],
-					'Text' => $row['Text'],
-					'Duration' => $row['Duration'],
-					'Day' => $row['Day_of_Set'],
-					'Yearly' => $row['Yearly']
+		foreach ( $result as $row ) {
+			if ( $row->jahr == $year ) {
+				$vars[ $row->Datum ][] = [
+					'ID' => $row->Text_ID,
+					'Text' => $row->Text,
+					'Duration' => $row->Duration,
+					'Day' => $row->Day_of_Set,
+					'Yearly' => $row->Yearly
 				];
-			} elseif ( $row['Yearly'] == 1 ) {
-				$new_date = $row['monat'] . '-' . $row['tag'] . '-' . $year;
+			} elseif ( $row->Yearly == 1 ) {
+				$new_date = $row->monat . '-' . $row->tag . '-' . $year;
 				$vars[ $new_date ][] = [
-					'ID' => $row['Text_ID'],
-					'Text' => $row['Text'],
-					'Duration' => $row['Duration'],
-					'Day' => $row['Day_of_Set'],
-					'Yearly' => $row['Yearly']
+					'ID' => $row->Text_ID,
+					'Text' => $row->Text,
+					'Duration' => $row->Duration,
+					'Day' => $row->Day_of_Set,
+					'Yearly' => $row->Yearly
 				];
 			}
 		}
-		$dbr->freeResult( $result );
 		return json_encode( $vars );
 	}
 
@@ -165,9 +162,8 @@ class MsCalendar {
 			]
 		);
 
-		$result = $dbw->select( 'mscal_content', [ 'MAX(ID) as maxid' ], '' );
-		$row = $dbw->fetchRow( $result );
-		$maxId = $row['maxid'];
+		$row = $dbw->selectRow( 'mscal_content', [ 'MAX(ID) as maxid' ], '' );
+		$maxId = $row->maxid;
 
 		for ( $i = 0; $i < $duration; $i++ ) {
 			$addDate = date( 'Y-m-d', strtotime( $newDate . ' + ' . $i . ' days' ) );
