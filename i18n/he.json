@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
+			"Amire80",
 			"Ex-Diktator"
 		]
 	},
-	"msc-cancel": "ביטול"
+	"msc-cancel": "ביטול",
+	"msc-eventedit": "עריכת האירוע הזה"
 }
