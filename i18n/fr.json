@@ -6,12 +6,13 @@
 			"Urhixidur",
 			"Wladek92",
 			"mberthault",
-			"riverbees"
+			"riverbees",
+			"Verdy p"
 		]
 	},
 	"msc-desc": "Ajouter <code>&lt;mscalendar&gt;</code> pour insérer un calendrier dans une page du wiki",
 	"msc-noname": "Chaque calendrier doit avoir un nom",
-	"msc-notfirstday": "Attention: cet événement est périodique",
+	"msc-notfirstday": "Attention : cet événement est périodique",
 	"msc-change": "Confirmer",
 	"msc-remove": "Supprimer",
 	"msc-create": "Valider",
