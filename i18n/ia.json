@@ -1,0 +1,24 @@
+{
+	"@metadata": {
+		"authors": [
+			"McDutchie"
+		]
+	},
+	"msc-desc": "Adde le etiquetta <code>&lt;mscalendar&gt;</code> pro inserer calendarios in paginas wiki",
+	"msc-noname": "Cata calendario debe haber un nomine",
+	"msc-notfirstday": "Attention, isto es un evento recurrente",
+	"msc-change": "Confirmar",
+	"msc-remove": "Deler iste evento",
+	"msc-create": "Confirmar",
+	"msc-cancel": "Cancellar",
+	"msc-eventname": "Nomine del evento:",
+	"msc-eventdate": "Data:",
+	"msc-eventduration": "Durata in dies:",
+	"msc-eventyearly": "Evento annual",
+	"msc-eventedit": "Modificar iste evento",
+	"msc-eventcreate": "Crear un nove evento",
+	"msc-today": "Hodie",
+	"msc-todaylabel": "Ir al data actual",
+	"msc-months": "januario,februario,martio,april,maio,junio,julio,augusto,septembre,octobre,novembre,decembre",
+	"msc-days": "dominica,lunedi,martedi,mercuridi,jovedi,venerdi,sabbato"
+}
