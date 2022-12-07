@@ -5,6 +5,12 @@
 			"Amire80"
 		]
 	},
+	"msc-change": "אישור",
+	"msc-remove": "מחיקת האירוע הזה",
+	"msc-create": "אישור",
 	"msc-cancel": "ביטול",
-	"msc-eventedit": "עריכת האירוע הזה"
+	"msc-eventname": "שם האירוע:",
+	"msc-eventdate": "תאריך:",
+	"msc-eventedit": "עריכת האירוע הזה",
+	"msc-today": "היום"
 }
