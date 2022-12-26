@@ -1,0 +1,19 @@
+{
+	"@metadata": {
+		"authors": []
+	},
+	"msc-desc": "Dodaje oznaku <code>&lt;mscalendar&gt;</code> za umetanje kalendara u viki stranice.",
+	"msc-noname": "Svaki kalendar mora da ima ime.",
+	"msc-notfirstday": "Pažnja: Događaj se ponavlja.",
+	"msc-change": "Potvrdi",
+	"msc-remove": "Izbriši događaj",
+	"msc-create": "Potvrdi",
+	"msc-cancel": "Otkaži",
+	"msc-eventyearly": "Godišnji događaj",
+	"msc-eventedit": "Uređivanje događaja",
+	"msc-eventcreate": "Pravljenje događaja",
+	"msc-today": "Danas",
+	"msc-todaylabel": "Idi na trenutan datum",
+	"msc-months": "januar,februar,mart,april,maj,jun,jul,avgust,septembar,oktobar,novembar,decembar",
+	"msc-days": "nedelja,ponedeljak,utorak,sreda,četvrtak,petak,subota"
+}
