@@ -4,9 +4,21 @@
 			"Eleassar"
 		]
 	},
+	"msc-desc": "Doda značko <code><mscalendar></code> za vstavljanje koledarjev v viki strani",
+	"msc-noname": "Vsak koledar mora imeti ime",
+	"msc-notfirstday": "Pozor, ta dogodek se ponavlja",
 	"msc-change": "Potrdi",
+	"msc-remove": "Izbriši ta dogodek",
 	"msc-create": "Potrdi",
 	"msc-cancel": "Prekliči",
+	"msc-eventname": "Ime dogodka:",
 	"msc-eventdate": "Datum:",
-	"msc-today": "Danes"
+	"msc-eventduration": "Trajanje v dnevih:",
+	"msc-eventyearly": "Letni dogodek",
+	"msc-eventedit": "Uredi dogodek",
+	"msc-eventcreate": "Ustvari nov dogodek",
+	"msc-today": "Danes",
+	"msc-todaylabel": "Pojdi na trenutni datum",
+	"msc-months": "januar,februar,marec,april,maj,junij,julij,avgust,september,oktober,november,december",
+	"msc-days": "nedelja,ponedeljek,torek,sreda,četrtek,petek,sobota"
 }
