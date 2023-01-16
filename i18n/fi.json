@@ -1,9 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Silvonen"
+			"Silvonen",
+			"Yupik"
 		]
 	},
 	"msc-change": "Vahvista",
-	"msc-create": "Vahvista"
+	"msc-create": "Vahvista",
+	"msc-today": "Tänään"
 }
