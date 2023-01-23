@@ -10,21 +10,21 @@
 			"Verdy p"
 		]
 	},
-	"msc-desc": "Ajouter <code>&lt;mscalendar&gt;</code> pour insérer un calendrier dans une page du wiki",
+	"msc-desc": "Ajoute <code>&lt;mscalendar&gt;</code> pour insérer un calendrier dans une page du wiki",
 	"msc-noname": "Chaque calendrier doit avoir un nom",
-	"msc-notfirstday": "Attention : cet événement est périodique",
+	"msc-notfirstday": "Attention, cet événement est périodique",
 	"msc-change": "Confirmer",
-	"msc-remove": "Supprimer",
+	"msc-remove": "Supprimer cet événement",
 	"msc-create": "Valider",
 	"msc-cancel": "Annuler",
 	"msc-eventname": "Nom Evt :",
 	"msc-eventdate": "Date :",
 	"msc-eventduration": "Durée (en jours) :",
-	"msc-eventyearly": "Tous les ans",
-	"msc-eventedit": "Modifier Evt Calendrier",
-	"msc-eventcreate": "Créer Evt Calendrier",
+	"msc-eventyearly": "Événement annuel",
+	"msc-eventedit": "Modifier cet événement",
+	"msc-eventcreate": "Créer un nouvel événement",
 	"msc-today": "Aujourd’hui",
-	"msc-todaylabel": "Sauter à la date du jour",
-	"msc-months": "Janvier,Février,Mars,Avril,Mai,Juin,Juillet,Août,Septembre,Octobre,Novembre,Décembre",
-	"msc-days": "Dimanche,Lundi,Mardi,Mercredi,Jeudi,Vendredi,Samedi"
+	"msc-todaylabel": "Aller à la date du jour",
+	"msc-months": "janvier,février,mars,avril,mai,juin,juillet,août,septembre,octobre,novembre,décembre",
+	"msc-days": "dimanche,lundi,mardi,mercredi,jeudi,vendredi,samedi"
 }
