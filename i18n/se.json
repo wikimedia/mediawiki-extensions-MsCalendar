@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Kimberli Mäkäräinen (WMNO)"
+			"Kimberli Mäkäräinen (WMNO)",
+			"Yupik"
 		]
 	},
+	"msc-cancel": "Šluhtte",
 	"msc-today": "Odne"
 }
