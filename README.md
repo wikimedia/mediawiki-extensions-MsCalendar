@@ -28,6 +28,7 @@ The events of each day are sorted alphabetically. You can also sort them by id b
 
 * Developed and coded by Martin Schwindl (wiki@ratin.de)
 * Idea, project management and bug fixing by Martin Keyler (wiki@keyler-consult.de)
-* Updated, debugged and enhanced by Felipe Schenone (schenonef@gmail.com)
+* Updated, debugged and improved by Felipe Schenone (User:Sophivorus)
+* Updated for MediaWiki 1.39+ by Patrick Dudics (User:BeneBane)
 * Support for multiple calendars by Frédéric Souchon (aka Fraifrai)
 * This extension uses jquery.calendario.js v1.0.0 (http://www.codrops.com) - Licensed under the MIT license (http://www.opensource.org/licenses/mit-license.php) - Copyright 2012 - Codrops (http://www.codrops.com)

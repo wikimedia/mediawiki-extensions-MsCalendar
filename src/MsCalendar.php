@@ -1,15 +1,9 @@
 <?php
 
-class MsCalendar {
 
-	public static function onRegistration() {
-		global $wgAjaxExportList;
-		$wgAjaxExportList[] = 'MsCalendar::getMonth';
-		$wgAjaxExportList[] = 'MsCalendar::saveNew';
-		$wgAjaxExportList[] = 'MsCalendar::update';
-		$wgAjaxExportList[] = 'MsCalendar::remove';
-		$wgAjaxExportList[] = 'MsCalendar::checkDB';
-	}
+use MediaWiki\MediaWikiServices;
+
+class MsCalendar {
 
 	/**
 	 * @param DatabaseUpdater $updater
@@ -24,14 +18,14 @@ class MsCalendar {
 	 * @param Parser $parser
 	 */
 	static function setHook( Parser $parser ) {
-		$parser->setHook( 'MsCalendar', 'MsCalendar::render' );
+		$parser->setHook( 'MsCalendar', [ self::class, 'render' ] );
 	}
 
 	/**
-	 * @param string $input
-	 * @param array $args
-	 * @param Parser $parser
-	 * @param PPFrame $frame
+	 * @param string $input -- value between the html tag <MsCalendar>...</MsCalendar>
+	 * @param array $args -- args array which ar html tag attributes.
+	 * @param Parser $parser -- Parent MediaWiki Parser object.
+	 * @param PPFrame $frame -- Parent MediaWiki parent frame.
 	 * @return string
 	 */
 	static function render( $input, array $args, Parser $parser, PPFrame $frame ) {
@@ -48,13 +42,15 @@ class MsCalendar {
 			$sort = $args['sort'];
 		}
 
+		$lb = MediaWikiServices::getInstance()->getDBLoadBalancer();
+		$dbr = $lb->getConnectionRef( DB_REPLICA );
+
 		// Get the id of the calendar
-		$dbr = wfGetDB( DB_REPLICA );
 		$row = $dbr->selectRow( 'mscal_names', [ 'ID' ], [ 'Cal_Name' => $name ] );
 		if ( $row ) {
 			$id = $row->ID;
 		} else {
-			$dbw = wfGetDB( DB_PRIMARY );
+			$dbw = $lb->getConnectionRef( DB_PRIMARY );
 			$dbw->insert(
 				'mscal_names',
 				[
@@ -80,186 +76,5 @@ class MsCalendar {
 		$output .= '</div>';
 		$output .= '<div class="fc-calendar-container" data-calendar-id="' . htmlspecialchars( $id ) . '" data-calendar-name="' . htmlspecialchars( $name ) . '" data-calendar-sort="' . htmlspecialchars( $sort ) . '"></div>';
 		return $output;
-	}
-
-	/**
-	 * @param int $month
-	 * @param int $year
-	 * @param int $calendarId
-	 * @param string $calendarSort
-	 * @return string
-	 */
-	static function getMonth( $month, $year, $calendarId, $calendarSort ) {
-		if ( $calendarId === 0 ) {
-			return false;
-		}
-
-		$vars = [];
-		$dbr = wfGetDB( DB_REPLICA );
-		$result = $dbr->select(
-			[ 'a' => 'mscal_list', 'b' => 'mscal_content' ],
-			[
-				"DATE_FORMAT(Date, '%m') as monat", "YEAR(date) as jahr", "DAY(date) as tag",
-				"DATE_FORMAT(Date, '%m-%d-%Y') as Datum",
-				'Text_ID', 'b.ID', 'Text', 'Duration',
-				'Start_Date', 'Yearly', 'Day_of_Set',
-			],
-			[
-				'MONTH(Date)' => $month,
-				'YEAR(Date)'  => $year,
-				'a.Text_ID = b.ID',
-				'a.Cal_ID'    => $calendarId,
-			],
-			__METHOD__,
-			[ 'ORDER BY' => ( $calendarSort == 'id' ) ? 'ID' : 'Text' ]
-		);
-		foreach ( $result as $row ) {
-			if ( $row->jahr == $year ) {
-				$vars[ $row->Datum ][] = [
-					'ID' => $row->Text_ID,
-					'Text' => $row->Text,
-					'Duration' => $row->Duration,
-					'Day' => $row->Day_of_Set,
-					'Yearly' => $row->Yearly
-				];
-			} elseif ( $row->Yearly == 1 ) {
-				$new_date = $row->monat . '-' . $row->tag . '-' . $year;
-				$vars[ $new_date ][] = [
-					'ID' => $row->Text_ID,
-					'Text' => $row->Text,
-					'Duration' => $row->Duration,
-					'Day' => $row->Day_of_Set,
-					'Yearly' => $row->Yearly
-				];
-			}
-		}
-		return json_encode( $vars );
-	}
-
-	/**
-	 * @param int $calendarId
-	 * @param string $date
-	 * @param string $title
-	 * @param int $eventId
-	 * @param int $duration
-	 * @param int $yearly
-	 * @return string
-	 */
-	static function saveNew( $calendarId, $date, $title, $eventId, $duration, $yearly ) {
-		$newDate = date( 'Y-m-d', strtotime( $date ) );
-		$newDate2 = date( 'm-d-Y', strtotime( $date ) );
-
-		$dbw = wfGetDB( DB_PRIMARY );
-		$dbw->insert(
-			'mscal_content',
-			[
-				'ID'         => null,
-				'Text'       => $title,
-				'Start_Date' => $newDate,
-				'Duration'   => $duration,
-				'Yearly'     => $yearly,
-			]
-		);
-
-		$row = $dbw->selectRow( 'mscal_content', [ 'MAX(ID) as maxid' ], '' );
-		$maxId = $row->maxid;
-
-		for ( $i = 0; $i < $duration; $i++ ) {
-			$addDate = date( 'Y-m-d', strtotime( $newDate . ' + ' . $i . ' days' ) );
-			$dbw->insert(
-				'mscal_list',
-				[
-					'ID'         => null,
-					'Date'       => $addDate,
-					'Text_ID'    => $maxId,
-					'Day_of_Set' => $i + 1,
-					'Cal_ID'     => $calendarId,
-				]
-			);
-		}
-
-		$vars[ $newDate2 ][] = [
-			'ID' => $maxId,
-			'Text' => $title,
-			'Duration' => $duration,
-			'Yearly' => $yearly
-		];
-		return json_encode( $vars );
-	}
-
-	/**
-	 * @param int $calendarId
-	 * @param string $date
-	 * @param string $title
-	 * @param int $eventId
-	 * @param int $duration
-	 * @param int $yearly
-	 * @return string
-	 */
-	static function update( $calendarId, $date, $title, $eventId, $duration, $yearly ) {
-		$newDate = date( 'Y-m-d', strtotime( $date ) );
-		$newDate2 = date( 'm-d-Y', strtotime( $date ) );
-
-		$dbw = wfGetDB( DB_PRIMARY );
-		$dbw->update(
-			'mscal_content',
-			[
-				'Text'       => $title,
-				'Start_Date' => $newDate,
-				'Duration'   => $duration,
-				'Yearly'     => $yearly,
-			],
-			[ 'ID' => $eventId ]
-		);
-
-		$dbw->delete( 'mscal_list', [ 'Text_ID' => $eventId ] );
-
-		for ( $i = 0; $i < $duration; $i++ ) {
-			$addDate = date( 'Y-m-d', strtotime( $newDate . ' + ' . $i . ' days' ) );
-			$dbw->insert(
-				'mscal_list',
-				[
-					'ID'         => null,
-					'Date'       => $addDate,
-					'Text_ID'    => $eventId,
-					'Day_of_Set' => $i + 1,
-					'Cal_ID'     => $calendarId,
-				]
-			);
-		}
-
-		$data[ $newDate2 ][] = [
-			'ID' => $eventId,
-			'Text' => $title,
-			'Duration' => $duration,
-			'Yearly' => $yearly
-		];
-		return json_encode( $data );
-	}
-
-	/**
-	 * @param int $calendarId
-	 * @param string $date
-	 * @param string $title
-	 * @param int $eventId
-	 * @param int $duration
-	 * @param int $yearly
-	 * @return string
-	 */
-	static function remove( $calendarId, $date, $title, $eventId, $duration, $yearly ) {
-		$newDate = date( 'm-d-Y', strtotime( $date ) );
-		$newDate2 = date( 'm-d-Y', strtotime( $date ) );
-
-		$dbw = wfGetDB( DB_PRIMARY );
-		$dbw->delete( 'mscal_content', [ 'ID' => $eventId ] );
-		$dbw->delete( 'mscal_list', [ 'Text_ID' => $eventId ] );
-
-		$data[ $newDate2 ][] = [
-			'ID' => $eventId,
-			'Text' => $title,
-			'Duration' => $duration,
-			'Yearly' => $yearly
-		];
-		return json_encode( $data );
 	}
 }

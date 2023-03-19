@@ -84,6 +84,89 @@
 			}
 			var year = calendar.getYear();
 			calendar.caldata = {};
+			//New code by Patrick Dudics.
+			$.ajax({
+				// request type ( GET or POST ) use this for ajax prior to v1.9 otherwise use method:"GET"
+				type: "GET",
+
+				// the URL to which the request is sent
+				url: mw.util.wikiScript('api'),
+
+				// data to be sent to the server				
+				data: { 'action':'mscalendargetmonth', 'format':'json', 'month': month, 'year': year, 'calendarId': calendarId, 'calendarSort': calendarSort },
+
+				// The type of data that you're expecting back from the server
+				dataType: 'json',
+
+				// Function to be called if the request succeeds
+				success: function( jsonDataObj ){
+					/*
+					if (typeof jsonDataObj === 'string' || jsonDataObj instanceof String) {
+						console.log( 'jsonDataObj is a string' );
+					}
+					else {
+						console.log( 'jsonDataObj is an object' );
+					}
+					*/
+					//console.log(JSON.stringify(jsonDataObj));
+					//console.log(jsonDataObj.data);
+					parsedJsonDataObj = JSON.parse(jsonDataObj.data);
+					//console.log(parsedJsonDataObj);
+					for ( dateEntry in parsedJsonDataObj ) {
+						//Dynamically accessing json object property via [ propertyname ].
+						//In this case the dateEntry is the property name.  Something like "03-26-2023".
+						arrayOfObjects = parsedJsonDataObj[dateEntry];
+						//console.log( JSON.stringify(arrayOfObjects) );
+						//
+						for ( i = 0; i < arrayOfObjects.length; i++ ) {
+							//console.log ( arrayOfObjects[i] );
+							for ( propName in arrayOfObjects[i]) {
+								//console.log( propName ); //propertyName like 'id' or 'text'
+								//console.log( arrayOfObjects[i][propName] ); //property value
+								htmlEscapedValue = mw.html.escape( arrayOfObjects[i][propName] );  //Escaped the value.
+								//console.log ( htmlEscapedValue );
+								arrayOfObjects[i][propName] = htmlEscapedValue; //Store the escaped value.
+							}
+						}
+					}
+					calendar.setData( parsedJsonDataObj );
+					//console.log( calendar.caldata );
+				}
+			});
+			/*
+			{
+				"0":"
+					{
+						"03-26-2023":[
+							{
+								"ID":"4037",
+								"Text":" Turnover - Gustavo P.",
+								"Duration":"1",
+								"Day":"1",
+								"Yearly":"1"
+							},
+							{
+								"ID":"4038",
+								"Text":"TurnoverBackup - Clauida C.",
+								"Duration":"1",
+								"Day":"1",
+								"Yearly":"1"
+							}
+						],
+						"03-01-2023":[
+							{
+								"ID":"3931",
+								"Text":"HOLIDAY-Balearic Day (Spain)",
+								"Duration":"1",
+								"Day":"1",
+								"Yearly":"1"
+							}
+						]
+					}
+					"
+			}
+			*/
+			/* Original code.
 			$.get( mw.util.wikiScript(), {
 				action: 'ajax',
 				rs: 'MsCalendar::getMonth',
@@ -100,6 +183,7 @@
 				calendar.setData( data );
 				//console.log( calendar.caldata );
 			}, 'json' );
+			*/
 		}
 		loadMonth();
 
@@ -164,6 +248,7 @@
 		}
 
 		function dialogPressButton( rs_var, this_dialog ) {
+			//console.log ( rs_var );
 			if ( this_dialog.find( 'input[name="remove_event"]' ).is( ':checked' ) ) {
 				rs_var = 'MsCalendar::remove';
 			}
@@ -176,6 +261,51 @@
 
 			if ( bValid ) {
 				//console.log( datum.val() );
+				//New code added by Patrick Dudics
+				apiAction = '';
+				switch ( rs_var.toLowerCase().trim() ) {
+					case "mscalendar::savenew":
+						apiAction = "mscalendarsavenew";
+						event_id = 0;
+						break;
+					case "mscalendar::update":
+						apiAction = "mscalendarupdate";
+						break;
+					case "mscalendar::remove":
+						apiAction = "mscalendarremove";
+						break;
+					default:
+						apiAction = "unknownApiCall";
+				}
+				
+				//console.log( calendarId );
+				//console.log( datum );
+				//console.log( inhalt );
+				//console.log( event_id );
+				//console.log( duration );
+				//console.log( yearly );
+				
+				$.ajax({
+					// request type ( GET or POST )
+					type: "GET",
+						
+					// the URL to which the request is sent
+					url: mw.util.wikiScript('api'),
+
+					// data to be sent to the server
+					data: { 'action':apiAction, 'format':'json', 'calendarId':calendarId, 'date':datum, 'title':inhalt, 'eventId':event_id, 'duration':duration, 'yearly':yearly },
+
+					// The type of data that you're expecting back from the server
+					dataType: 'json',
+						
+					// Function to be called if the request succeeds
+					success: function( jsonDataObj ){
+						//console.log(JSON.stringify(jsonDataObj));
+						loadMonth();
+					}
+				});
+				//Orignal code:
+				/*
 				$.get( mw.util.wikiScript(), {
 					action: 'ajax',
 					rs: rs_var,
@@ -183,6 +313,7 @@
 				}, function ( data ) {
 					loadMonth();
 				}, 'json' );
+				*/
 				this_dialog.dialog( 'close' );
 				this_dialog.remove();
 			}
