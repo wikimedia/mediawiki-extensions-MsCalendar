@@ -6,7 +6,6 @@ use Wikimedia\ParamValidator\ParamValidator;
 class ApiMsCalendarUpdate extends ApiBase {
 
 	public function execute() {
-
 		// Get the parameters
 		$params = $this->extractRequestParams();
 

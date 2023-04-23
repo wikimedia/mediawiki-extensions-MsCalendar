@@ -20,5 +20,9 @@
 	"msc-today": "Today",
 	"msc-todaylabel": "Go to current date",
 	"msc-months": "January,February,March,April,May,June,July,August,September,October,November,December",
-	"msc-days": "Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday"
+	"msc-days": "Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday",
+	"apihelp-mscalendargetmonth-summary": "Get month",
+	"apihelp-mscalendarsavenew-summary": "Save new",
+	"apihelp-mscalendarupdate-summary": "Update",
+	"apihelp-mscalendarremove-summary": "Remove"
 }

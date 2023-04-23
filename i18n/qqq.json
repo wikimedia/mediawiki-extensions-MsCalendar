@@ -20,5 +20,9 @@
 	"msc-today": "A hint message\n{{Identical|Today}}",
 	"msc-todaylabel": "A button text",
 	"msc-months": "All months",
-	"msc-days": "All weekdays"
+	"msc-days": "All weekdays",
+	"apihelp-mscalendargetmonth-summary": "API module for retrieving events for a specific month in a calendar.",
+	"apihelp-mscalendarsavenew-summary": "API module for saving a new event in a calendar.",
+	"apihelp-mscalendarupdate-summary": "API module for updating an existing event in a calendar.",
+	"apihelp-mscalendarremove-summary": "API module for removing an event from a calendar."
 }

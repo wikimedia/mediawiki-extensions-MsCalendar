@@ -1,6 +1,5 @@
 <?php
 
-
 use MediaWiki\MediaWikiServices;
 
 class MsCalendar {
@@ -8,7 +7,7 @@ class MsCalendar {
 	/**
 	 * @param DatabaseUpdater $updater
 	 */
-	static function updateDatabase( DatabaseUpdater $updater ) {
+	public static function updateDatabase( DatabaseUpdater $updater ) {
 		$updater->addExtensionTable( 'mscal_list', __DIR__ . '/../sql/MsCalendar.sql' );
 		$updater->addExtensionTable( 'mscal_names', __DIR__ . '/../sql/MsCalendar.sql' );
 		$updater->addExtensionTable( 'mscal_content', __DIR__ . '/../sql/MsCalendar.sql' );
@@ -17,7 +16,7 @@ class MsCalendar {
 	/**
 	 * @param Parser $parser
 	 */
-	static function setHook( Parser $parser ) {
+	public static function setHook( Parser $parser ) {
 		$parser->setHook( 'MsCalendar', [ self::class, 'render' ] );
 	}
 
@@ -28,16 +27,18 @@ class MsCalendar {
 	 * @param PPFrame $frame -- Parent MediaWiki parent frame.
 	 * @return string
 	 */
-	static function render( $input, array $args, Parser $parser, PPFrame $frame ) {
+	public static function render( $input, array $args, Parser $parser, PPFrame $frame ) {
 		if ( $input ) {
 			$name = $input;
 		} elseif ( array_key_exists( 'name', $args ) ) {
-			$name = $args['name']; // For backwards compatibility
+			// For backwards compatibility
+			$name = $args['name'];
 		} else {
 			return wfMessage( 'msc-noname' );
 		}
 
-		$sort = 'abc'; // Default
+		// Default
+		$sort = 'abc';
 		if ( array_key_exists( 'sort', $args ) ) {
 			$sort = $args['sort'];
 		}
