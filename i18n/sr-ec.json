@@ -3,6 +3,7 @@
 		"authors": [
 			"BadDog",
 			"Kizule",
+			"Milicevic01",
 			"Zoranzoki21"
 		]
 	},
@@ -22,5 +23,7 @@
 	"msc-today": "Данас",
 	"msc-todaylabel": "Иди на тренутан датум",
 	"msc-months": "јануар,фебруар,март,април,мај,јун,јул,август,септембар,октобар,новембар,децембар",
-	"msc-days": "недеља,понедељак,уторак,среда,четвртак,петак,субота"
+	"msc-days": "недеља,понедељак,уторак,среда,четвртак,петак,субота",
+	"apihelp-mscalendarupdate-summary": "Ажурирај",
+	"apihelp-mscalendarremove-summary": "Уклони"
 }

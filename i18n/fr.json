@@ -26,5 +26,9 @@
 	"msc-today": "Aujourd’hui",
 	"msc-todaylabel": "Aller à la date du jour",
 	"msc-months": "janvier,février,mars,avril,mai,juin,juillet,août,septembre,octobre,novembre,décembre",
-	"msc-days": "dimanche,lundi,mardi,mercredi,jeudi,vendredi,samedi"
+	"msc-days": "dimanche,lundi,mardi,mercredi,jeudi,vendredi,samedi",
+	"apihelp-mscalendargetmonth-summary": "Obtenir le mois",
+	"apihelp-mscalendarsavenew-summary": "Enregistrer le nouveau",
+	"apihelp-mscalendarupdate-summary": "Mettre à jour",
+	"apihelp-mscalendarremove-summary": "Retirer"
 }

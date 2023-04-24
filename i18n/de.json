@@ -21,5 +21,9 @@
 	"msc-today": "Heute",
 	"msc-todaylabel": "zum heutigen Datum springen",
 	"msc-months": "Januar,Februar,März,April,Mai,Juni,Juli,August,September,Oktober,November,Dezember",
-	"msc-days": "Sonntag,Montag,Dienstag,Mittwoch,Donnerstag,Freitag,Samstag"
+	"msc-days": "Sonntag,Montag,Dienstag,Mittwoch,Donnerstag,Freitag,Samstag",
+	"apihelp-mscalendargetmonth-summary": "Monat holen",
+	"apihelp-mscalendarsavenew-summary": "Neu speichern",
+	"apihelp-mscalendarupdate-summary": "Aktualisieren",
+	"apihelp-mscalendarremove-summary": "Entfernen"
 }

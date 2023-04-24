@@ -20,5 +20,9 @@
 	"msc-today": "Danes",
 	"msc-todaylabel": "Pojdi na trenutni datum",
 	"msc-months": "januar,februar,marec,april,maj,junij,julij,avgust,september,oktober,november,december",
-	"msc-days": "nedelja,ponedeljek,torek,sreda,četrtek,petek,sobota"
+	"msc-days": "nedelja,ponedeljek,torek,sreda,četrtek,petek,sobota",
+	"apihelp-mscalendargetmonth-summary": "Pridobi mesec",
+	"apihelp-mscalendarsavenew-summary": "Shrani novo",
+	"apihelp-mscalendarupdate-summary": "Posodobi",
+	"apihelp-mscalendarremove-summary": "Odstrani"
 }
