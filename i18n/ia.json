@@ -20,5 +20,9 @@
 	"msc-today": "Hodie",
 	"msc-todaylabel": "Ir al data actual",
 	"msc-months": "januario,februario,martio,april,maio,junio,julio,augusto,septembre,octobre,novembre,decembre",
-	"msc-days": "dominica,lunedi,martedi,mercuridi,jovedi,venerdi,sabbato"
+	"msc-days": "dominica,lunedi,martedi,mercuridi,jovedi,venerdi,sabbato",
+	"apihelp-mscalendargetmonth-summary": "Obtener mense",
+	"apihelp-mscalendarsavenew-summary": "Salveguardar nove",
+	"apihelp-mscalendarupdate-summary": "Actualisar",
+	"apihelp-mscalendarremove-summary": "Remover"
 }
