@@ -21,5 +21,9 @@
 	"msc-today": "היום",
 	"msc-todaylabel": "מעבר לתאריך הנוכחי",
 	"msc-months": "ינואר,פברואר,מרץ,אפריל,מאי,יוני,יולי,אוגוסט,ספטמבר,אוקטובר,נובמבר,דצמבר",
-	"msc-days": "ראשון,שני,שלישי,רביעי,חמישי,שישי,שבת"
+	"msc-days": "ראשון,שני,שלישי,רביעי,חמישי,שישי,שבת",
+	"apihelp-mscalendargetmonth-summary": "קבלת חודש",
+	"apihelp-mscalendarsavenew-summary": "שמירת חדש",
+	"apihelp-mscalendarupdate-summary": "עדכון",
+	"apihelp-mscalendarremove-summary": "הסרה"
 }

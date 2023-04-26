@@ -17,5 +17,8 @@
 	"msc-today": "اڄ",
 	"msc-todaylabel": "موجودہ تریخ تے ون٘ڄو",
 	"msc-months": "ڄنوری،فروری،مارچ،اپریل،مئی،جون،جولائی،اگست،ستمبر،اکتوبر،نومبر،دسمبر",
-	"msc-days": "اتوار،سون٘وار،منڲل،ٻُدھ،خمیس،جمعہ،چھݨچھݨ"
+	"msc-days": "اتوار،سون٘وار،منڲل،ٻُدھ،خمیس،جمعہ،چھݨچھݨ",
+	"apihelp-mscalendargetmonth-summary": "مہینہ گھنو",
+	"apihelp-mscalendarupdate-summary": "اپ ݙیٹ",
+	"apihelp-mscalendarremove-summary": "ہٹاؤ"
 }

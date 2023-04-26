@@ -20,5 +20,9 @@
 	"msc-today": "Денес",
 	"msc-todaylabel": "Оди на тековниот датум",
 	"msc-months": "јануари,февруари,март,април,мај,јуни,јули,август,септември,октомври,ноември,декември",
-	"msc-days": "недела,понеделник,вторник,среда,четврток,петок,сабота"
+	"msc-days": "недела,понеделник,вторник,среда,четврток,петок,сабота",
+	"apihelp-mscalendargetmonth-summary": "Дај месец",
+	"apihelp-mscalendarsavenew-summary": "Зачувај нов",
+	"apihelp-mscalendarupdate-summary": "Поднови",
+	"apihelp-mscalendarremove-summary": "Отстрани"
 }
