@@ -19,6 +19,7 @@
 	"msc-months": "ڄنوری،فروری،مارچ،اپریل،مئی،جون،جولائی،اگست،ستمبر،اکتوبر،نومبر،دسمبر",
 	"msc-days": "اتوار،سون٘وار،منڲل،ٻُدھ،خمیس،جمعہ،چھݨچھݨ",
 	"apihelp-mscalendargetmonth-summary": "مہینہ گھنو",
+	"apihelp-mscalendarsavenew-summary": "نواں محفوظ کرو",
 	"apihelp-mscalendarupdate-summary": "اپ ݙیٹ",
 	"apihelp-mscalendarremove-summary": "ہٹاؤ"
 }
