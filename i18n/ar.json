@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Alshamiri1",
 			"ديفيد"
 		]
 	},
@@ -20,5 +21,8 @@
 	"msc-today": "اليوم",
 	"msc-todaylabel": "انتقل إلى التاريخ الحالي",
 	"msc-months": "يناير، فبراير، مارس، أبريل، مايو، يونيو، يوليو، أغسطس، سبتمبر، أكتوبر، نوفمبر، ديسمبر",
-	"msc-days": "الأحد، الاثنين، الثلاثاء، الأربعاء، الخميس، الجمعة، السبت"
+	"msc-days": "الأحد، الاثنين، الثلاثاء، الأربعاء، الخميس، الجمعة، السبت",
+	"apihelp-mscalendarsavenew-summary": "حفظ جديد",
+	"apihelp-mscalendarupdate-summary": "تحديث",
+	"apihelp-mscalendarremove-summary": "إزالة"
 }

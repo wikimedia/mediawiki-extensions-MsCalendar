@@ -4,6 +4,8 @@
 			"Hanna Tardos"
 		]
 	},
+	"apihelp-mscalendargetmonth-summary": "Hónap lekérdezése",
+	"apihelp-mscalendarsavenew-summary": "Új mentése",
 	"apihelp-mscalendarupdate-summary": "Frissítés",
 	"apihelp-mscalendarremove-summary": "Eltávolítás"
 }
