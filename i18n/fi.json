@@ -2,10 +2,23 @@
 	"@metadata": {
 		"authors": [
 			"Silvonen",
-			"Yupik"
+			"Yupik",
+			"Pyscowicz"
 		]
 	},
+	"msc-noname": "Jokaisella kalenterilla on oltava nimi",
+	"msc-notfirstday": "Huomio, tämä on toistuva tapahtuma",
 	"msc-change": "Vahvista",
+	"msc-remove": "Poista tämä tapahtuma",
 	"msc-create": "Vahvista",
-	"msc-today": "Tänään"
+	"msc-cancel": "Peruuta",
+	"msc-eventname": "Tapahtuman nimi:",
+	"msc-eventdate": "Päiväys:",
+	"msc-eventduration": "Kesto päivinä:",
+	"msc-eventyearly": "Vuosittainen tapahtuma",
+	"msc-eventedit": "Muokkaa tätä tapahtumaa",
+	"msc-eventcreate": "Luo uusi tapahtuma",
+	"msc-today": "Tänään",
+	"msc-months": "Tammikuu,Helmikuu,Maaliskuu,Huhtikuu,Toukokuu,Kesäkuu,Heinäkuu,Elokuu,Syyskuu,Lokakuu,Marraskuu,Joulukuu",
+	"msc-days": "Sunnuntai,Maanantai,Tiistai,Keskiviikko,Torstai,Perjantai,Lauantai"
 }
