@@ -1,0 +1,28 @@
+{
+	"@metadata": {
+		"authors": [
+			"Nokeoo"
+		]
+	},
+	"msc-desc": "Prideda žymą <code><mscalendar></code>, kad būtų galima įterpti kalendorius į vikį puslapius",
+	"msc-noname": "Kiekvienas kalendorius turi turėti pavadinimą",
+	"msc-notfirstday": "Dėmesio, tai pasikartojantis įvykis",
+	"msc-change": "Patvirtinti",
+	"msc-remove": "Ištrinti šį įvykį",
+	"msc-create": "Patvirtinti",
+	"msc-cancel": "Atšaukti",
+	"msc-eventname": "Įvykio pavadinimas:",
+	"msc-eventdate": "Data:",
+	"msc-eventduration": "Trukmė dienomis:",
+	"msc-eventyearly": "Kasmetinis įvykis",
+	"msc-eventedit": "Redaguoti šį įvykį",
+	"msc-eventcreate": "Sukurti naują įvykį",
+	"msc-today": "Šiandien",
+	"msc-todaylabel": "Eiti į dabartinę datą",
+	"msc-months": "Sausis,Vasaris,Kovas,Balandis,Gegužė,Birželis,Liepa,Rugpjūtis,Rugsėjis,Spalis,Lapkritis,Gruodis",
+	"msc-days": "Sekmadienis,Pirmadienis,Antradienis,Trečiadienis,Ketvirtadienis,Penktadienis,Šeštadienis",
+	"apihelp-mscalendargetmonth-summary": "Gauti mėnesį",
+	"apihelp-mscalendarsavenew-summary": "Išsaugoti naują",
+	"apihelp-mscalendarupdate-summary": "Atnaujinti",
+	"apihelp-mscalendarremove-summary": "Pašalinti"
+}
