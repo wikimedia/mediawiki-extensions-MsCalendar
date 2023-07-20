@@ -1,0 +1,24 @@
+{
+	"@metadata": {
+		"authors": [
+			"Pisceskaze"
+		]
+	},
+	"msc-desc": "Thêm thẻ <code>&lt;mscalendar&gt;</code> để chèn lịch vào các trang wiki",
+	"msc-noname": "Mỗi trang lịch cần phải có tên",
+	"msc-notfirstday": "Chú ý, đây là một sự kiện định kỳ",
+	"msc-change": "Xác nhận",
+	"msc-remove": "Xóa sự kiện này",
+	"msc-create": "Xác nhận",
+	"msc-cancel": "Hủy bỏ",
+	"msc-eventname": "Tên sự kiện:",
+	"msc-eventdate": "Ngày:",
+	"msc-eventduration": "Thời lượng tính bằng ngày:",
+	"msc-eventyearly": "Sự kiện hàng năm",
+	"msc-eventedit": "Chỉnh sửa sự kiện này",
+	"msc-eventcreate": "Tạo sự kiện mới",
+	"msc-today": "Hôm nay",
+	"msc-todaylabel": "Chuyển đến ngày hiện tại",
+	"msc-months": "Tháng 1, Tháng 2, Tháng 3, Tháng 4, Tháng 5, Tháng 6, Tháng 7, Tháng 8, Tháng 9, Tháng 10, Tháng 11, Tháng 12",
+	"msc-days": "Chủ nhật,Thứ hai,Thứ ba,Thứ tư,Thứ năm,Thứ sáu,Thứ bảy"
+}
