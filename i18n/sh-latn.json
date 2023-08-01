@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Winston Sung"
+		]
+	},
+	"msc-change": "Potvrdi",
+	"msc-create": "Potvrdi",
+	"msc-cancel": "Otkaži",
+	"msc-today": "Danas"
+}
