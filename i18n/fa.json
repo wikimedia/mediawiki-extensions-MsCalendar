@@ -2,12 +2,13 @@
 	"@metadata": {
 		"authors": [
 			"Alireza Ivaz",
+			"Ebraminio",
 			"Huji",
 			"Jeeputer"
 		]
 	},
 	"msc-desc": "برچسب &lt;MsCalendar&gt; را برای درج تقویم در صفحه‌های ویکی می‌افزاید.",
-	"msc-noname": "همهٔ تقویم‌ها باید یک نام داشته‌باشند",
+	"msc-noname": "همهٔ تقویم‌ها باید یک نام داشته باشند",
 	"msc-change": "پذیرفتن",
 	"msc-create": "پذیرفتن",
 	"msc-cancel": "چشم پوشی",
