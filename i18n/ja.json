@@ -1,9 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"MathXplore"
+			"MathXplore",
+			"Chqaz"
 		]
 	},
+	"msc-today": "今日",
 	"apihelp-mscalendarupdate-summary": "更新",
 	"apihelp-mscalendarremove-summary": "除去"
 }
