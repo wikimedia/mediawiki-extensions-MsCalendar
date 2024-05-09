@@ -2,10 +2,11 @@
 	"@metadata": {
 		"authors": [
 			"Patriot Kor",
-			"Patriot Kur"
+			"Patriot Kur",
+			"Гусейн"
 		]
 	},
 	"msc-cancel": "Ləğv karde",
-	"msc-today": "Imruj",
-	"msc-days": "İşanbə,Dışanbə,Seşanbə,Çoşanbə,Əynəşəv,Əynə,Şanbə"
+	"msc-today": "Ymruž",
+	"msc-days": "Išanbə,Dyšanbə,Sešanbə,Cošanbə,Əjnəšəv,Əjnə,Šanbə"
 }
