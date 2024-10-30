@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Liuxinyu970226"
+			"Liuxinyu970226",
+			"沈澄心"
 		]
 	},
 	"msc-desc": "添加<code>&lt;mscalendar&gt;</code>标签以插入日历至wiki页面",
@@ -20,5 +21,9 @@
 	"msc-today": "今天",
 	"msc-todaylabel": "前往当前日期",
 	"msc-months": "1月,2月,3月,4月,5月,6月,7月,8月,9月,10月,11月,12月",
-	"msc-days": "星期日,星期一,星期二,星期三,星期四,星期五,星期六"
+	"msc-days": "星期日,星期一,星期二,星期三,星期四,星期五,星期六",
+	"apihelp-mscalendargetmonth-summary": "获取月份",
+	"apihelp-mscalendarsavenew-summary": "保存新的",
+	"apihelp-mscalendarupdate-summary": "更新",
+	"apihelp-mscalendarremove-summary": "移除"
 }
