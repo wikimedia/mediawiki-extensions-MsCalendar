@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Robby"
+			"Robby",
+			"Volvox"
 		]
 	},
 	"msc-noname": "All Kalenner muss en Numm hunn",
@@ -13,5 +14,7 @@
 	"msc-today": "Haut",
 	"msc-todaylabel": "Op den aktuellen Datum goen",
 	"msc-months": "Januar,Februar,Mäerz,Abrëll,Mee,Juni,Juli,August,September,Oktober,November,Dezember",
-	"msc-days": "Sonndeg,Méindeg,Dënschdeg,Mëttwoch,Donneschdeg,Freideg,Samschdeg"
+	"msc-days": "Sonndeg,Méindeg,Dënschdeg,Mëttwoch,Donneschdeg,Freideg,Samschdeg",
+	"apihelp-mscalendarupdate-summary": "Aktualiséieren",
+	"apihelp-mscalendarremove-summary": "Ewechhuelen"
 }
