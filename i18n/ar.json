@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Alshamiri1",
-			"ديفيد"
+			"ديفيد",
+			"Meno25"
 		]
 	},
 	"msc-desc": "يضيف الوسم <code>&lt;mscalendar&gt;</code> لإدراج التقاويم في صفحات الويكي",
@@ -22,6 +23,7 @@
 	"msc-todaylabel": "انتقل إلى التاريخ الحالي",
 	"msc-months": "يناير، فبراير، مارس، أبريل، مايو، يونيو، يوليو، أغسطس، سبتمبر، أكتوبر، نوفمبر، ديسمبر",
 	"msc-days": "الأحد، الاثنين، الثلاثاء، الأربعاء، الخميس، الجمعة، السبت",
+	"apihelp-mscalendargetmonth-summary": "احصل على الشهر",
 	"apihelp-mscalendarsavenew-summary": "حفظ جديد",
 	"apihelp-mscalendarupdate-summary": "تحديث",
 	"apihelp-mscalendarremove-summary": "إزالة"
