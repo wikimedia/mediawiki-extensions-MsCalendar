@@ -1,14 +1,15 @@
 {
 	"@metadata": {
 		"authors": [
-			"Ajeje Brazorf"
+			"Ajeje Brazorf",
+			"GianAntonucci"
 		]
 	},
 	"msc-change": "Cunferma",
 	"msc-create": "Cunferma",
 	"msc-cancel": "Annulla",
 	"msc-eventyearly": "Eventu annuali",
-	"msc-today": "Oi",
+	"msc-today": "Oji",
 	"msc-months": "jinnaru,frivaru,marzu,aprili,maiu,giugnu,giugnettu, austu,sittèmmiru,uttùviru,nuvèmmiru,dicèmmiru",
 	"msc-days": "duminicadìa,lunidìa,martidìa,mercuridìa,jovidìa,venniridìa,sabbatudìa"
 }
