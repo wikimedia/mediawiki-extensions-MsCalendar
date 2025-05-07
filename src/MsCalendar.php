@@ -43,15 +43,16 @@ class MsCalendar {
 			$sort = $args['sort'];
 		}
 
-		$lb = MediaWikiServices::getInstance()->getDBLoadBalancer();
-		$dbr = $lb->getConnectionRef( DB_REPLICA );
+		$services = MediaWikiServices::getInstance();
+		$provider = $services->getConnectionProvider();
+		$dbr = $provider->getReplicaDatabase();
 
 		// Get the id of the calendar
 		$row = $dbr->selectRow( 'mscal_names', [ 'ID' ], [ 'Cal_Name' => $name ] );
 		if ( $row ) {
 			$id = $row->ID;
 		} else {
-			$dbw = $lb->getConnectionRef( DB_PRIMARY );
+			$dbw = $provider->getPrimaryDatabase();
 			$dbw->insert(
 				'mscal_names',
 				[

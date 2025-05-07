@@ -20,8 +20,9 @@ class ApiMsCalendarRemove extends ApiBase {
 		$newDate = date( 'm-d-Y', strtotime( $date ) );
 		$newDate2 = date( 'm-d-Y', strtotime( $date ) );
 
-		$lb = MediaWikiServices::getInstance()->getDBLoadBalancer();
-		$dbw = $lb->getConnectionRef( DB_PRIMARY );
+		$services = MediaWikiServices::getInstance();
+		$provider = $services->getConnectionProvider();
+		$dbw = $provider->getPrimaryDatabase();
 
 		$dbw->delete( 'mscal_content', [ 'ID' => $eventId ] );
 		$dbw->delete( 'mscal_list', [ 'Text_ID' => $eventId ] );

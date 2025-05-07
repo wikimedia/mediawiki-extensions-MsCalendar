@@ -20,8 +20,9 @@ class ApiMsCalendarUpdate extends ApiBase {
 		$newDate = date( 'Y-m-d', strtotime( $date ) );
 		$newDate2 = date( 'm-d-Y', strtotime( $date ) );
 
-		$lb = MediaWikiServices::getInstance()->getDBLoadBalancer();
-		$dbw = $lb->getConnectionRef( DB_PRIMARY );
+		$services = MediaWikiServices::getInstance();
+		$provider = $services->getConnectionProvider();
+		$dbw = $provider->getPrimaryDatabase();
 
 		$dbw->update(
 			'mscal_content',

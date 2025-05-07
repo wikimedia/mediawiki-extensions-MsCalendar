@@ -21,8 +21,9 @@ class ApiMsCalendarGetMonth extends ApiBase {
 
 		$vars = [];
 
-		$lb = MediaWikiServices::getInstance()->getDBLoadBalancer();
-		$dbr = $lb->getConnectionRef( DB_REPLICA );
+		$services = MediaWikiServices::getInstance();
+		$provider = $services->getConnectionProvider();
+		$dbr = $provider->getReplicaDatabase();
 
 		$result = $dbr->select(
 			[ 'a' => 'mscal_list', 'b' => 'mscal_content' ],
