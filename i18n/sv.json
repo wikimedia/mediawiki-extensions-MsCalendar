@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Stefan2255",
 			"WikiPhoenix"
 		]
 	},
@@ -20,5 +21,9 @@
 	"msc-today": "Idag",
 	"msc-todaylabel": "Gå till nuvarande datum",
 	"msc-months": "januari,februari,mars,april,maj,juni,juli,augusti,september,oktober,november,december",
-	"msc-days": "Söndag,Måndag,Tisdag,Onsdag,Torsdag,Fredag,Lördag"
+	"msc-days": "Söndag,Måndag,Tisdag,Onsdag,Torsdag,Fredag,Lördag",
+	"apihelp-mscalendargetmonth-summary": "Hämta månad",
+	"apihelp-mscalendarsavenew-summary": "Spara nytt",
+	"apihelp-mscalendarupdate-summary": "Uppdatera",
+	"apihelp-mscalendarremove-summary": "Ta bort"
 }
