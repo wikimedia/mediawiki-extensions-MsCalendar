@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"WikiPhoenix"
+			"WikiPhoenix",
+			"Stefan2255"
 		]
 	},
 	"msc-desc": "Lägger till märket <code>&lt;mscalendar&gt;</code> för att infoga kalendrar på wikisidor",
@@ -20,5 +21,9 @@
 	"msc-today": "Idag",
 	"msc-todaylabel": "Gå till nuvarande datum",
 	"msc-months": "januari,februari,mars,april,maj,juni,juli,augusti,september,oktober,november,december",
-	"msc-days": "Söndag,Måndag,Tisdag,Onsdag,Torsdag,Fredag,Lördag"
+	"msc-days": "Söndag,Måndag,Tisdag,Onsdag,Torsdag,Fredag,Lördag",
+	"apihelp-mscalendargetmonth-summary": "Hämta månad",
+	"apihelp-mscalendarsavenew-summary": "Spara nytt",
+	"apihelp-mscalendarupdate-summary": "Uppdatera",
+	"apihelp-mscalendarremove-summary": "Ta bort"
 }
