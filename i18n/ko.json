@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Ykhwong"
+			"Ykhwong",
+			"Tensama0415"
 		]
 	},
 	"msc-desc": "위키 문서에 달력을 추가하려면 <code>&lt;mscalendar&gt;</code> 태그를 추가하십시오",
@@ -21,6 +22,7 @@
 	"msc-todaylabel": "현재 날짜로 이동",
 	"msc-months": "1월,2월,3월,4월,5월,6월,7월,8월,9월,10월,11월,12월",
 	"msc-days": "일요일,월요일,화요일,수요일,목요일,금요일,토요일",
+	"apihelp-mscalendargetmonth-summary": "달 가져오기",
 	"apihelp-mscalendarsavenew-summary": "새로 저장",
 	"apihelp-mscalendarupdate-summary": "업데이트",
 	"apihelp-mscalendarremove-summary": "제거"
