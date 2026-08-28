@@ -1,0 +1,28 @@
+{
+	"@metadata": {
+		"authors": [
+			"AhmedG612"
+		]
+	},
+	"msc-desc": "Waxay ku darsataa summadda <code>&lt;mscalendar&gt;</code> si jadwallada taariikhaha loogu geliyo bogagga wiki-ga",
+	"msc-noname": "Jadwal kasta waa inuu lahaadaa magac",
+	"msc-notfirstday": "Digniin, kani waa dhacdo soo noqnoqota",
+	"msc-change": "Xaqiiji",
+	"msc-remove": "Tirtir dhacdadaan",
+	"msc-create": "Xaqiiji",
+	"msc-cancel": "Jooji",
+	"msc-eventname": "Magaca dhacdada:",
+	"msc-eventdate": "Taariikh:",
+	"msc-eventduration": "Muddada maalmaha:",
+	"msc-eventyearly": "Dhacdo sannadle ah",
+	"msc-eventedit": "Wax ka beddel dhacdadan",
+	"msc-eventcreate": "Abuur dhacdo cusub",
+	"msc-today": "Maanta",
+	"msc-todaylabel": "Ugu dub taariikhda hadda",
+	"msc-months": "Janaayo,Febraayo,Maarso,Abriil,Maajo,Juune,Luulyo,Ogosto,Sebtembar,Oktoobar,Nofeembar,Diseembar",
+	"msc-days": "Axad,Isniin,Talaado,Arbaco,Khamiis,Jimco,Sabti",
+	"apihelp-mscalendargetmonth-summary": "Hel bisha",
+	"apihelp-mscalendarsavenew-summary": "Keydi cusub",
+	"apihelp-mscalendarupdate-summary": "Cusboonaysii",
+	"apihelp-mscalendarremove-summary": "Ka saar"
+}
